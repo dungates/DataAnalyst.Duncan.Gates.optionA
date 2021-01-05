@@ -1,6 +1,6 @@
 # Form Project for Teaching Lab
 
-<center><bold>Option A</bold></center>
+<p align="center"><bold>Option A</bold><p align="center">
 
 This repository addresses part 1a with several large datasets incorporated into the analysis. The incorporation as completed is addressed in the data cleaning and data obtain files under the rmd folder, and all data created in the cleaning process or initially obtained is saved in the Data folder. The data obtainment process is specifically created with DataObtain.rmd, and documented in its output DataObtain.html which is copied to the main folder of this repository. The data cleaning process is also documented in DataClean.rmd, and its output DataClean.html gives a thorough overview of the cleaning process.
 
