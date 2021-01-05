@@ -1,0 +1,403 @@
+---
+title: "Educational, Racial, and Ratio-nal Geographies of the United States"
+author: "Duncan Gates"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: 
+  rmdformats::robobook: 
+    self_contained: true # Other options are downcute, material, readthedown, html_clean, html_docco, lockdown, https://github.com/juba/rmdformats
+    thumbnails: false
+    lightbox: true
+    gallery: false
+    highlight: tango
+    number_sections: false
+    includes:
+      after_body: footer.html
+---
+
+```{css, echo = F}
+h1.title {
+  font-size: 38px;
+  color: DarkRed;
+  text-align: center;
+}
+h4.author { /* Header 4 - and the author and data headers use this too  */
+    font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  color: DarkRed;
+  text-align: center;
+}
+h4.date { /* Header 4 - and the author and data headers use this too  */
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  color: DarkBlue;
+  text-align: center;
+}
+```
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(readr)
+library(here)
+# devtools::install_github("mattflor/chorddiag")
+library(chorddiag)
+# devtools::install_github("UrbanInstitute/urbnmapr")
+library(urbnmapr)
+library(sf)
+library(gt)
+library(viridis)
+library(ISLR)
+wealth_education_data <- read_csv(here("Data/wealth_education_data_clean.csv")) # Insert WDI dataframe here
+education_data <- read_rds(here("Data/education_county_data_clean.rds"))
+race_data <- read_rds(here("Data/race_county_data_clean.rds"))
+race_education_data <- read_csv(here("Data/race_education_data.csv"))
+race_education_state_data <- read_rds(here("Data/race_education_state_data_clean.rds"))
+student_ratio_us_states_clean <- read_csv(here("Data/student_ratio_us_states_clean.csv"))
+public_school_data <- read_csv(here("Data/public_school_data.csv"))
+
+knitr::opts_chunk$set(echo = F, message = F, warning = F, cache = T)
+htmltools::tagList(rmarkdown::html_dependency_font_awesome())
+```
+
+
+# The Flow of Race and Education
+
+A chord diagram visualizes these relationships by drawing quadratic Bézier curves between arcs. The source and target arcs represents two mirrored subsets of the total population, such as the number of people with black hair that prefer blonde hair, and the number of people with blonde hair that prefer black hair. This chord diagram shows how each race listed distributes amongst the various levels of educational attainment. There are some very obvious patterns that emerge when each group is specified (which can be done by mousing over it). The sums of each racial group is 100, but the sums of the educational categories are larger than 100 because it is accounting for each race separately and the data is in percentages, but it is a useful visualization nonetheless. The data is pulled from the 2018 census.
+
+By mousing over each subsection of each race, or the specific connecting line of interest you can view the percent that "achieves" that educational attainment, or the racial distribution of that particular type of education.
+
+```{r fig.height=15}
+race_education_data_2 <- race_education_data %>% select(-`...1`) %>% mutate_if(is.numeric, .funs = funs(.*100))
+race_ed_matrix <- as.matrix(race_education_data_2)
+
+colnames(race_ed_matrix) <- c("All", "American Indian or Alaska Native", "Asian", "Black", "Hispanic", 
+                                       "Pacific Islander", "White", "More than one race")
+
+rownames(race_ed_matrix) <- c("Less than high school", "High school graduate", "Some college",
+                                            "Associate degree", "Bachelor's degree", "Master's degree", "Professional degree", 
+                                            "Doctoral degree")
+
+
+
+groupColors <- viridis(8)
+chorddiag(race_ed_matrix, type = "bipartite", 
+          groupColors = groupColors,
+          groupnamePadding = 20, showTicks = F, categorynameFontsize = 0, groupnameFontsize = 11)
+```
+
+Put more simply, this is just a good way to visualize the following table that shows the proportion of races fulfilling each degree. Green represents a race having greater educational attainment than the average in that category, while yellow represents a lower educational attainment, and white represents an equivalent educational attainment. Blue is used to highlight All - the variable to which each racial category is being compared.
+
+```{r}
+race_education_data %>%
+  rename(`Educational Attainment` = ...1) %>%
+  gt::gt() %>%
+  tab_header(title = md("**Table 1: Educational Attainment by Race**")) %>%
+  fmt_percent(columns = vars(All, `American Indian or Alaska Native`, `Asian`, 
+`Black`, `Hispanic`, `Native Hawaiian or other Pacific Islander`, 
+`White`, `More than one race`)) %>%
+  tab_style(
+    style = list(
+      cell_fill(color = "#4AC16DFF")
+    ),
+    locations = cells_body(
+      columns = vars(`American Indian or Alaska Native`),
+      rows = `American Indian or Alaska Native` > All
+    )
+  ) %>%
+  tab_style(
+    style = list(
+      cell_fill(color = "#FDE725FF")
+    ),
+    locations = cells_body(
+      columns = vars(`American Indian or Alaska Native`),
+      rows = `American Indian or Alaska Native` < All
+    )
+  ) %>%
+  tab_style(
+    style = list(
+      cell_fill(color = "#FDE725FF")
+    ),
+    locations = cells_body(
+      columns = vars(`Asian`),
+      rows = `Asian` < All
+    )
+  ) %>%
+  tab_style(
+    style = list(
+      cell_fill(color = "#FDE725FF")
+    ),
+    locations = cells_body(
+      columns = vars(`Black`),
+      rows = `Black` < All
+    )
+  ) %>%
+  tab_style(
+    style = list(
+      cell_fill(color = "#FDE725FF")
+    ),
+    locations = cells_body(
+      columns = vars(`White`),
+      rows = `White` < All
+    )
+  ) %>%
+  tab_style(
+    style = list(
+      cell_fill(color = "#FDE725FF")
+    ),
+    locations = cells_body(
+      columns = vars(`Hispanic`),
+      rows = `Hispanic` < All
+    )
+  ) %>%
+  tab_style(
+    style = list(
+      cell_fill(color = "#FDE725FF")
+    ),
+    locations = cells_body(
+      columns = vars(`Native Hawaiian or other Pacific Islander`),
+      rows = `Native Hawaiian or other Pacific Islander` < All
+    )
+  ) %>%
+  tab_style(
+    style = list(
+      cell_fill(color = "#FDE725FF")
+    ),
+    locations = cells_body(
+      columns = vars(`More than one race`),
+      rows = `More than one race` < All
+    )
+  ) %>%
+  tab_style(
+    style = list(
+      cell_fill(color = "#4AC16DFF")
+    ),
+    locations = cells_body(
+      columns = vars(`Asian`),
+      rows = `Asian` > All
+    )
+  ) %>%
+  tab_style(
+    style = list(
+      cell_fill(color = "#4AC16DFF")
+    ),
+    locations = cells_body(
+      columns = vars(`Black`),
+      rows = `Black` > All
+    )
+  ) %>%
+  tab_style(
+    style = list(
+      cell_fill(color = "#4AC16DFF")
+    ),
+    locations = cells_body(
+      columns = vars(`White`),
+      rows = `White` > All
+    )
+  ) %>%
+  tab_style(
+    style = list(
+      cell_fill(color = "#4AC16DFF")
+    ),
+    locations = cells_body(
+      columns = vars(`Hispanic`),
+      rows = `Hispanic` > All
+    )
+  ) %>%
+  tab_style(
+    style = list(
+      cell_fill(color = "#4AC16DFF")
+    ),
+    locations = cells_body(
+      columns = vars(`Native Hawaiian or other Pacific Islander`),
+      rows = `Native Hawaiian or other Pacific Islander` > All
+    )
+  ) %>%
+  tab_style(
+    style = list(
+      cell_fill(color = "#4AC16DFF")
+    ),
+    locations = cells_body(
+      columns = vars(`More than one race`),
+      rows = `More than one race` > All
+    )
+  ) %>%
+  tab_style(
+    style = list(
+      cell_fill(color = "#365C8DFF")
+    ),
+    locations = cells_body(
+      columns = vars(All)
+    )
+  ) %>%
+  tab_spanner(
+    label = "All Education",
+    columns = vars(`Educational Attainment`, All)
+  ) %>%
+  tab_spanner(
+    label = "Educational Attainment per Race",
+    columns = vars(`American Indian or Alaska Native`, `Asian`, 
+`Black`, `Hispanic`, `Native Hawaiian or other Pacific Islander`, 
+`White`, `More than one race`)
+  ) %>%
+  tab_options(heading.background.color = "#277F8EFF",
+              column_labels.background.color = "#277F8EFF",
+              stub.background.color = "skyblue") # Stub won't color for some reason
+```
+
+# Geography
+
+This section shows some of the basic geography of the US in terms of education and race. The illustration of which come in county level data and state level data. The clear pattern that emerges is how densely populated hispanic and black communities are, while white populations are extremely widespread.
+
+## County Racial Geography of the US
+
+```{r}
+race_data %>%
+  ggplot(aes(fill = percent, color = percent)) +
+  facet_wrap(~ factor(race, levels = c("White", "Black", "Asian", "Hispanic"))) +
+  geom_sf() +
+  scale_fill_viridis_c(direction = -1) +
+  scale_color_viridis_c(direction = -1) +
+  guides(color = F) +
+  labs(title = "Figure 1: Racial geography of the US in 2018",
+       caption = "Source: American Community Survey",
+       fill = "Percent\nby County") +
+  theme_void() +
+  theme(plot.title = element_text(hjust = 0.5),
+        legend.position = "bottom",
+        legend.justification = "right",
+        legend.direction = "horizontal")
+```
+
+Now comparing the distribution of race to the distribution of education some very interesting yet historically representative patterns emerge - certain communities are obviously very underserved. Together these two mappings show that most of the US does not complete college, and is very racially-geographically compounded, unless you are white.
+
+## County Educational Geography of the US
+
+```{r}
+# just_geometry <- race_data_join %>% select(geometry, GEOID)
+# ed_data_join <- ed_data_join %>% left_join(just_geometry, by = "GEOID")
+education_data %>%
+  ggplot(aes(fill = estimate, color = estimate)) +
+  facet_wrap(~ factor(variable, levels = c('Less than 9th Grade', 
+               '9th to 12th grade, no diploma', 
+               'High school graduate', 
+               'Some college, no degree', 
+               "Associate's degree", 
+               "Bachelor's degree", 
+               'Grad/pro degree'))) +
+  geom_sf() +
+  scale_fill_viridis_c(direction = -1) +
+  scale_color_viridis_c(direction = -1) +
+  guides(color = F) +
+  labs(title = "Figure 2: Educational Geography of the US",
+       caption = "Source: American Community Survey",
+       color = "Percent") +
+  theme_void() + 
+  theme(legend.position = "bottom",
+        legend.justification = "right",
+        legend.direction = "horizontal",
+        plot.title = element_text(hjust = 0.5))
+```
+
+## State Racial Geography of the US
+
+Does this look any different if we go by state? It certainly makes the differences seem less disparate, but that is simply the issue of scaling things, educational and racial disparities are sharp - the difference is not a long slow crawl of inequality but a vast divide of rich and poor, opportunity and privilege vs. inaffordability. If in one small area it is tougher to attain a bachelor's degree it has a vastly harsher impact on one race than another.
+
+```{r}
+states_sf <- get_urbn_map("states", sf = TRUE) # For state geoms
+states_df <- states_sf %>%
+  left_join(race_education_state_data, by = c("state_name" = "state"))
+ggplot(states_df, aes(fill = race_percent)) +
+  facet_wrap(~ factor(race, levels = c("White", "Black", "Asian", "Hispanic"))) +
+  geom_sf() +
+  geom_sf_text(aes(label = round(race_percent, 2)), size = 2) +
+  scale_fill_viridis_c(direction = -1) +
+  scale_color_manual(values = "black") +
+  scale_alpha_manual(values = 0.2) +
+  labs(title = "Figure 3: Racial Geography of the US in 2018",
+       caption = "Source: American Community Survey",
+       fill = "Percent\nby State") +
+  theme_void() +
+  theme(plot.title = element_text(hjust = 0.5),
+        legend.position = "bottom",
+        legend.direction = "horizontal")
+```
+
+## State Educational Geography of the US
+
+We see similar results again with racial geography, it is extremely consolidated, the cause of this is primarily historical and not the subject of this investigation, but it is apparent how geography can have a two way effect on the issues of race and education. Educational opportunity is restricted by location, and racial geography is very consolidated, leading to an inability to afford educational opportunity in some regions, and thus a lack of of . 
+
+```{r}
+ggplot(states_df, aes(fill = education_percent)) +
+  facet_wrap(~ education_level) +
+  geom_sf() +
+  geom_sf_text(aes(label = education_percent), size = 2) +
+  scale_fill_viridis_c(direction = -1) +
+  scale_color_manual(values = "black") +
+  scale_alpha_manual(values = 0.2) +
+  labs(title = "Figure 4: Educational Geography of the US in 2018",
+       caption = "Source: American Community Survey\nText represents proportion per state",
+       fill = "Percent\nby State") +
+  theme_void() +
+  theme(plot.title = element_text(hjust = 0.5),
+        legend.position = "none")
+```
+
+# Education Quality and Race
+
+To really determine an association a direct link between macroeconomic factors can be created by looking at state level education quality data. The provision of affordable, and quality education to families is one of the inherent ideals behind "equality of opportunity" and is necessary for educational and income mobility between generations. Should a state be failing to provide that to certain races, and if it is comprised of a higher proportion of a minority race then the affects upon the entirety is multiplied greatly by the geographic compactness of non-white races across the US. The following regression analysis and graph separately show very similar ideas with similar mathematical bases - that as racial proportion of black and hispanic students increases in a state, education quality is generally decreasing, producing a disproportional impact on minorities. If Asian's are weighted separately we see that they actually enjoy a slight improvement in public school educational quality as their proportional makeup of the state increases, although if they are weighted against the proportional increase in educational quality for white students as in the regression table, the difference is slightly negative. The graph perfectly illustrates the educational opportunity gap in the US, although white people make up a majority of the US, when breaking down to state level educational data - which is where most educational provision and funding come from - there is a disproportionate lack of opportunity being provided to minorities, especially black and hispanic populations.
+
+```{r}
+scores_vs_raced <- left_join(public_school_data, race_education_state_data, by = c("State" = "state"))
+
+p <- ggplot(scores_vs_raced, aes(x = race_percent, y = `Total Score`, color = race, label = State)) + 
+  scale_color_manual(values = viridis(4)) +
+  geom_point() + 
+  geom_smooth(method = "lm", se = F) + 
+  ggpmisc::stat_poly_eq(aes(label = paste(stat(eq.label),
+                                  stat(rr.label), sep = "*\", \"*")),
+               formula = y ~ x, rr.digits = 3, coef.digits = 4,
+               parse = TRUE, label.x = "right", label.y = "middle") +
+  labs(y = "State Public School Education Quality Score", x = "Racial Proportion of State", color = "Race",
+       title = "Figure 5: Race and Education Quality") +
+  hrbrthemes::theme_ipsum() +
+  theme(plot.title = element_text(hjust = 0.5))
+plotly::ggplotly(p)
+```
+
+Looking at this in a table with a single regression comparing the weighted association of different races with educational quality scores we see that after accounting for the proportional makeup of a state, and race, there are decreases in eduational quality for all races relative to the educational quality score of white communities weighted for proportional makeup. The effect is however much larger for black and hispanic educational quality than for asian educational equality given the barely negative coefficient for asians, which indicates that if you are asian you can expect educational quality to decrease 0.06 points relative to white educational quality after weighting for proportions. For black and hispanic educational quality the expected decline is 0.338, and 0.369 points relative to white educational quality.
+
+```{r, results = 'asis'}
+ols1 <- lm(`Total Score` ~ factor(race, levels = c("White", "Asian", "Black", "Hispanic"))*race_percent, data = scores_vs_raced)
+stargazer::stargazer(ols1, type = "html", style = "qje",
+                     dep.var.labels = c("Educational Quality Score"),
+                     covariate.labels = 
+                       c("Asian", "Black", "Hispanic", "Race Proportion", "Asian*Race Proportion", "Black*Race Proportion", "Hispanic*Race Proportion"),
+                     title = "Table 2: Education Quality in Each State by Race")
+
+# ols <- lm(log(`Total Score`) ~ education_percent*factor(education_level) - education_percent, data = scores_vs_raced)
+# stargazer::stargazer(ols1, type = "text") # Interesting results but not entirely relevant
+```
+
+## Student-Teacher Ratio
+
+A secondary analysis of the association of student-teacher ratio in each state do not mirror the effects of educational quality. Compared only black people actually have a negative association of student-teacher ratio and racial proportion within each state after accounting for education quality. So, despite many states having more poorly rated educational quality for black communities, public schools actually manage to maintain more teachers per student surprisingly. Asians, and hispanics meanwhile see the reverse effect, and hispanics especially so, with much higher student-teacher ratio associations as their proportional makeup of a state increases. The $R^2$ value is very low here, but the goal is not to explain a significant amount of the proportion of the variance in the dependent variable with the independent variables, and the significance of the variables suggests that the results are not due to chance. In table 2 it is interpretable that student-teacher ratio is negatively associated with educational quality after accounting for race, and correspondingly that student-teacher ratio is negatively associated with all minorities, representing a potential significant geographic issue.
+
+```{r, results = 'asis'}
+state_ratios <- left_join(student_ratio_us_states_clean, scores_vs_raced, by = c("State")) %>%
+  slice(-1) %>%
+  mutate(race2 = factor(case_when(race == "White" ~ "white",
+                           race != "White" ~ "non-white")),
+         race2 = recode_factor(race2, `1` = "white", `2` = "non-white"))
+ols4 <- lm(Ratio ~ factor(race, levels = c("White", "Asian", "Black", "Hispanic"))*race_percent - race_percent + `Total Score` - factor(race, levels = c("White", "Asian", "Black", "Hispanic")), state_ratios)
+
+stargazer::stargazer(ols4, type = "html", style = "qje",
+          dep.var.labels = "Student-Teacher Ratio",
+          covariate.labels = c("Educ. Quality Score" , "White*RaceProp", "Asian*RaceProp",
+                               "Black*RaceProp", "Hispanic*RaceProp"),
+          title = "Table 3: White vs. Non-White Student-Teacher Ratio Comparison")
+```
+
+# Conclusions
+
+There are clear racial inequities in educational attainment, table 1 indicates that such inequities result in all races other than white or asian, the most common final education achievement is a high school degree. Intergenerational income mobility has been a well studied subject in economics, but educational mobility might offer a better lens to analyze this subject as the majority of income mobility comes from level of educational attainment. Given that this investigation found distinct levels of geographical disparity comparison of educational attainment by race should be considered with longitudinal data, as well as with structural breaks for counties in which minorities are actually a majority to determine the extent of educational opportunity disparities. Since education achieves its ultimate value fairly early in the life cycle, and is more directly influenced by parents, it serves as a measure of early life opportunities available to the child. Therefore measures of educational mobility should be developed, and used to compare different cohorts of children to assess levels of "equality of opportunity". Student-teacher ratios do not appear to have large quantitative associations with race in each state after accounting for proportional makeup. Geography is nonetheless a strong determinant of educational quality, as evidenced by table 1 and figure 5, and educational opportunity is certainly strongly disproportionate by state, and therefore also by race.
+
+

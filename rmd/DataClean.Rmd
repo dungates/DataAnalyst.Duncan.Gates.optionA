@@ -1,0 +1,163 @@
+---
+title: "DataClean"
+author: "Duncan Gates"
+date: "1/2/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = F, message = F, eval = F)
+library(WDI)
+library(readr)
+library(tidycensus)
+library(readxl)
+library(here)
+suppressPackageStartupMessages(library(tidyverse))
+```
+
+Once again to actually run the code contained here you will need to turn eval = F to eval = T.
+
+# Read in from Data Obtain
+
+```{r}
+education_data <- read_rds(here("Data/education_county_data.rds"))
+race_data <- read_rds(here("Data/race_county_data.rds"))
+student_ratio_us_states <- read_csv(here("Data/student_ratio_us_states.csv"))
+```
+
+
+# WDI
+
+I clean the WDI after extracting from the WDI library data by making a vector of its indicators for later use, specifying to extract 2015 data, and making the country codes characters for later joins, since it outputs as factors originally.
+
+```{r}
+indicators_raw <- WDI(indicator = c("NY.GDP.PCAP.CD", "SP.POP.TOTL", "SE.ADT.LITR.ZS",
+                                    "SE.XPD.TOTL.GD.ZS",
+                                    "SE.SEC.NENR.MA", "SE.SEC.NENR.FE"),
+                      start = 2015, end = 2015, extra = TRUE) %>%
+  tbl_df()
+indicators <- indicators_raw %>%
+  select(country_code = iso3c,
+         region,
+         NY.GDP.PCAP.CD:SE.SEC.NENR.FE) %>%
+  mutate(country_code = as.character(country_code))
+WDIData <- indicators
+```
+
+# UNESCO
+
+This data comes pre-cleaned, the original data can be viewed at http://data.uis.unesco.org/index.aspx?queryid=180.
+
+# Census Data
+
+I use tidycensus to obtain and relabel data on education and race at state and county level data in 2018. The majority of the work here is to make sure it will be able to take mapping formats later with geom_sf, as well as reasonably label numeric data, such as percentages.
+
+## County Data
+
+```{r}
+education_data_clean <- education_data %>% 
+  mutate(variable = case_when(variable == "DP02_0059P" ~ 'Less than 9th Grade',
+                              variable == "DP02_0060P" ~ '9th to 12th grade, no diploma',
+                              variable == "DP02_0061P" ~ 'High school graduate',
+                              variable == "DP02_0062P" ~ 'Some college, no degree',
+                              variable == "DP02_0063P" ~ 'Associate\'s degree',
+                              variable == "DP02_0064P" ~ 'Bachelor\'s degree',
+                              variable == "DP02_0065P" ~ 'Grad/pro degree'))
+race_data_clean <- race_data %>%
+  mutate(percent = estimate/summary_est) %>%
+  rename(race = variable)
+```
+
+
+## State Data
+
+```{r}
+racevars <- c(White = "B02001_002", 
+              Black = "B02001_003", 
+              Asian = "B02001_005",
+              Hispanic = "B03003_003")
+race_data_state <- get_acs(geography = "state",
+                  variables = racevars,
+                  year = 2018,
+                  geometry = TRUE,
+                  summary_var = "B02001_001",
+                  shift_geo = T)
+race_data_state <- race_data_state %>% as_tibble() %>% 
+  select(-geometry, -GEOID, -summary_moe, -moe) %>% 
+  rename(race = variable) %>% 
+  mutate(race_percent = 100*(estimate/summary_est)) %>%
+  select(-summary_est, -estimate) %>%
+  mutate(race = as.factor(race))
+
+ed_variable <- c('DP02_0059P', 
+              'DP02_0060P', 
+              'DP02_0061P', 
+              'DP02_0062P', 
+              'DP02_0063P', 
+              'DP02_0064P', 
+              'DP02_0065P')
+ed_data_state <- get_acs(geography = "state",
+                  variables = ed_variable,
+                  year = 2018,
+                  geometry = TRUE,
+                  summary_var = "DP02_0059P",
+                  shift_geo = T)
+ed_data_state <- ed_data_state %>% as_tibble() %>% 
+  select(-geometry, -GEOID, -summary_moe, -moe) %>% 
+  rename(education_level = variable) %>% 
+  select(-summary_est) %>% 
+  mutate(education_level = case_when(education_level == "DP02_0059P" ~ 'Less than 9th Grade',
+                              education_level == "DP02_0060P" ~ '9th to 12th grade, no diploma',
+                              education_level == "DP02_0061P" ~ 'High school graduate',
+                              education_level == "DP02_0062P" ~ 'Some college, no degree',
+                              education_level == "DP02_0063P" ~ 'Associate\'s degree',
+                              education_level == "DP02_0064P" ~ 'Bachelor\'s degree',
+                              education_level == "DP02_0065P" ~ 'Grad/pro degree')) %>%
+  mutate(education_level = factor(education_level, levels = c('Less than 9th Grade', 
+               '9th to 12th grade, no diploma', 
+               'High school graduate', 
+               'Some college, no degree', 
+               "Associate's degree", 
+               "Bachelor's degree", 
+               'Grad/pro degree'))) %>%
+  rename(education_percent = estimate)
+
+
+race_education_state <- ed_data_state %>% 
+  left_join(race_data_state, by = c("NAME")) %>% 
+  rename(state = NAME)
+```
+
+# Student-Teacher Ratio US States
+
+Some significant cleaning is required here, first I subset the 2016 data, and then I remove extra rows and "."'s.
+
+```{r}
+student_ratio_us_states_clean <- student_ratio_us_states %>%
+  select(`Table 208.40. Public elementary and secondary teachers, enrollment, and pupil/teacher ratios, by state or jurisdiction: Selected years, fall 2000 through fall 2016`, ...25) %>%
+  rename(State = `Table 208.40. Public elementary and secondary teachers, enrollment, and pupil/teacher ratios, by state or jurisdiction: Selected years, fall 2000 through fall 2016`, Ratio = ...25) %>%
+  slice(4:64) %>%
+  drop_na() %>%
+  mutate(State = str_remove_all(State, "\\.*"))
+```
+
+
+# Writing to the Data Folder
+
+Lastly I write all data to the Data folder and append _clean to the name for reference.
+
+```{r}
+write_csv(WDIData, here("Data/wealth_education_data_clean.csv"))
+
+write_csv(education_data_clean, here("Data/education_county_data_clean.csv"))
+write_csv(race_data_clean, here("Data/race_county_data_clean.csv"))
+write_rds(education_data_clean, here("Data/education_county_data_clean.rds"))
+write_rds(race_data_clean, here("Data/race_county_data_clean.rds"))
+write_rds(race_education_state, here("Data/race_education_state_data_clean.rds"))
+write_csv(race_education_state, here("Data/race_education_state_data_clean.csv"))
+
+write_csv(student_ratio_us_states_clean, here("Data/student_ratio_us_states_clean.csv"))
+```
+
+
+

@@ -1,0 +1,157 @@
+---
+title: "Data Obtain"
+author: "Duncan Gates"
+date: "1/2/2021"
+output: html_document
+---
+
+# Dependencies
+
+```{r setup}
+knitr::opts_chunk$set(echo = TRUE, warning = F, message = F, eval = F)
+library(WDI)
+# devtools::install_github("UrbanInstitute/urbnmapr")
+library(urbnmapr)
+library(readr)
+suppressPackageStartupMessages(library(tidycensus))
+library(readxl)
+library(here)
+library(rvest)
+library(RSelenium)
+```
+
+For any of the following code to actually evaluate on knitting, make sure to first remove eval = F from the code chunk options above.
+
+# WDI
+
+The World Development Indicators Database (WDI) has comprehensive data on both wealth and public education, which allows me to evaluate the impact of student-teacher ratio's on education taking into context different levels of wealth. The WDI data can be found [here](https://databank.worldbank.org/databases/education).
+
+```{warning = F}
+WDIsearch("public.*education") %>%
+  as.data.frame() %>%
+  tbl_df() %>%
+  arrange(str_length(name)) %>%
+  View()
+```
+
+# UNESCO
+
+The UNESCO data can be found [here](https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-05-07/student_teacher_ratio.csv), and comes pre-cleaned thanks to the makers of [tidytuesday](https://github.com/rfordatascience/tidytuesday).
+
+```{r}
+student_ratio <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-05-07/student_teacher_ratio.csv")
+```
+
+
+# Census Data
+
+I use the tidycensus library to pull data with the following code from the 2018 and 2019 American Community Survey, which vastly simplifies the use of the Census API. To use this library follow the instruction [here](https://walker-data.com/tidycensus/articles/basic-usage.html).
+
+```{r}
+all_2019_variables <- load_variables(2019, "acs5") # Load all possible 2019 variables
+```
+
+Obtaining educational attainment data is this easy:
+
+```{r}
+ed_variable <- c('DP02_0059P', 
+              'DP02_0060P', 
+              'DP02_0061P', 
+              'DP02_0062P', 
+              'DP02_0063P', 
+              'DP02_0064P', 
+              'DP02_0065P')
+ed_data <- get_acs(geography = "county",
+                  variables = ed_variable,
+                  year = 2018,
+                  geometry = TRUE,
+                  summary_var = "DP02_0059P",
+                  shift_geo = T)
+```
+
+Obtaining racial geography data is similarly easy:
+
+```{r}
+racevars <- c(White = "B02001_002", 
+              Black = "B02001_003", 
+              Asian = "B02001_005",
+              Hispanic = "B03003_003")
+race_data <- get_acs(geography = "county",
+                  variables = racevars,
+                  year = 2018,
+                  geometry = TRUE,
+                  summary_var = "B02001_001",
+                  shift_geo = T) # This argument shifts Hawaii and Alaska which I do because I later put numerous maps of the US together
+```
+
+## Census Data 2
+
+I also pull a small amount of cross race-education data to create a chord diagram, which was directly downloaded from the official census website [here](https://www.census.gov/content/census/en/data/tables/2019/demo/educational-attainment/cps-detailed-tables.html).
+
+```{r}
+race_education_data <- read_csv(here("Data/race_education_data.csv"))
+```
+
+# Education Quality Data
+
+I pull educational quality data from https://wallethub.com/edu/e/most-educated-states/31075#cinda-klickna, a recent analysis of educational attainment, school quality and achievement gaps between genders and races across states. This uses a selenium server to webcrawl and scrape the table which I then downloaded to a csv in chrome itself simply by clicking download.
+
+```{r}
+# xpath = '//*[@id="scroller"]/main/article/div[2]/div/div[4]/div[5]/table'
+# url <- "https://wallethub.com/edu/e/states-with-the-best-schools/5335"
+# 
+# rD <- RSelenium::rsDriver(browser = "chrome", port = 4888L,
+#                           chromever =
+#                                   system2(command = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+#                                           args = "--version",
+#                                           stdout = TRUE,
+#                                           stderr = TRUE) %>%
+#                                   stringr::str_extract(pattern = "(?<=Chrome )\\d+\\.\\d+\\.\\d+\\.") %>%
+#                                   magrittr::extract(!is.na(.)) %>%
+#                                   stringr::str_replace_all(pattern = "\\.",
+#                                                            replacement = "\\\\.") %>%
+#                                   paste0("^",  .) %>%
+#                                   stringr::str_subset(string =
+#                                                               binman::list_versions(appname = "chromedriver") %>%
+#                                                               dplyr::last()) %>%
+#                                   as.numeric_version() %>%
+#                                   max() %>%
+#                                   as.character())
+# remDr <- rD[["client"]]
+# remDr$open()
+# remDr$navigate(url)
+# # tblSource <- remDr$executeScript("return tbls[0].outerHTML;")[[1]]
+# address_element <- remDr$findElement(using = "class", value = "cardhub-edu-table center-aligned sortable")
+# readHTMLTable(tblSource)
+# remDr$close()
+# rD[["server"]]$stop()
+# rm(rD)
+# gc()
+```
+
+## Student Ratio by State
+
+Below I use data from the National Center for Education Statistics which can be found [here](https://nces.ed.gov/programs/digest/d18/tables/dt18_208.40.asp). It covers state by state student-ratio data from 2014-2016.
+
+```{r}
+student_ratio_us <- readxl::read_excel(here("Data/tabn208.40.xls"), n_max = 64)
+```
+
+
+# Writing to the Data Folder
+
+Below I copy all work to the data folder in csv format, which I source in the cleaning process and write with the same file names but with _clean appended. I also save the sf objects as rds files to preserve their mapping capabilities.
+
+```{r}
+write_csv(student_ratio, here("Data/student_ratio_data.csv"))
+
+write_csv(ed_data, here("Data/education_county_data.csv"))
+write_csv(race_data, here("Data/race_county_data.csv"))
+write_rds(ed_data, here("Data/education_county_data.rds"))
+write_rds(race_data, here("Data/race_county_data.rds"))
+
+write_csv(race_education_data, here("Data/race_education_data.csv"))
+
+write_csv(student_ratio_us, here("Data/student_ratio_us_states.csv"))
+```
+

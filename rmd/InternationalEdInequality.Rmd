@@ -1,0 +1,353 @@
+---
+title: "What are the Roots of Educational Inequality?"
+author: "Duncan Gates"
+date: "1/2/2021"
+output: 
+  rmdformats::robobook: 
+    self_contained: true # Other options are downcute, material, readthedown, html_clean, html_docco, lockdown, https://github.com/juba/rmdformats
+    thumbnails: false
+    lightbox: true
+    gallery: false
+    highlight: tango
+    number_sections: true
+    includes:
+      after_body: footer.html
+---
+
+```{css, echo = F}
+h1.title {
+  font-size: 38px;
+  color: DarkRed;
+  text-align: center;
+}
+h4.author { /* Header 4 - and the author and data headers use this too  */
+    font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  color: DarkRed;
+  text-align: center;
+}
+h4.date { /* Header 4 - and the author and data headers use this too  */
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  color: DarkBlue;
+  text-align: center;
+}
+```
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(viridis)
+library(here)
+
+wealth_education_data <- read_csv(here("Data/wealth_education_data_clean.csv")) # Insert WDI dataframe here
+student_ratio <- read_csv(here("Data/student_ratio_data.csv"))
+
+knitr::opts_chunk$set(echo = F, message = F, warning = F, cache = T)
+htmltools::tagList(rmarkdown::html_dependency_font_awesome())
+theme_set(theme_minimal())
+```
+
+# Introduction
+
+Class sizes and student-teacher ratios are often-discussed determinants of educational quality, and are certainly formative in students learning experiences. Smaller classes are often seen as being advantageous because the provide teachers with the ability to spend more time with individual students, and reduce the total amount of disruptions. This evidence (Piketty and M. Valdenaire, 2006[1]) is however not supported by the entirety of the literature (Fredriksson, Öckert and Oosterbeek, 2013[2]; OECD, 2016[3]). The ratio of students to teaching staff compares the number of students (full-time equivalents) to the number of teachers (full-time equivalents) at a given level of education and in similar types of institutions. This ratio does not take into account the amount of instruction time students have compared to the length of a teacher’s working day, or how much time teachers spend teaching (OECD 2019). The ratio of students to teaching staff is also generally an indicator of how educational resources are distributed. As student-teacher ratios decrease the effect of this must be weighted against measures such as higher salries for teachers, professional development, greater investment in teaching technology, and teaching assistance. For the global dataset used in this analysis it is not possible to obtain such granular data in the time frame available, therefore I take into account country GDP per capita, literacy, and other broad-base factors that are indicative of learning capability and opportunity. 
+
+# Data Exploration
+
+The student-teacher ratio in the data can be split by three different types - the ratio in primary, secondary, and tertiary education. To get an idea if this looks any different I plot out the top 10 and bottom 10 countries for each of these below:
+
+```{r echo = F, fig.width = 10}
+student_teacher_ratio_2015 <- student_ratio %>%
+  dplyr::filter(indicator == "Primary Education",
+         year == 2015,
+         !is.na(student_ratio))
+student_teacher_ratio_2015 %>%
+  arrange(desc(student_ratio)) %>%
+  slice(c(1:10, seq(n() - 10, n()))) %>%
+  mutate(country = fct_reorder(country, student_ratio)) %>%
+  ggplot(aes(country, student_ratio, fill = student_ratio)) +
+  geom_col() +
+  geom_text(aes(label = paste("Mean = ", mean(student_ratio))), y = 25, x = "Georgia") +
+  scale_fill_viridis_c() +
+  ylim(0, 100) +
+  coord_flip() +
+  expand_limits(y = 0) +
+  labs(title = "Countries with Highest and Lowest Primary School Student/Teacher Ratios",
+       x = "",
+       y = "Student/Teacher ratio",
+       caption = "Primary education as defined by UNESCO\nFigure 1",
+       fill = "Student-Teacher Ratio %") +
+  theme_minimal() +
+  theme(legend.position = "bottom",
+        plot.title = element_text(hjust = 0.5))
+
+student_teacher_ratio_2015_second <- student_ratio %>%
+  dplyr::filter(indicator == "Secondary Education",
+         year == 2015,
+         !is.na(student_ratio))
+student_teacher_ratio_2015_second %>%
+  arrange(desc(student_ratio)) %>%
+  slice(c(1:10, seq(n() - 10, n()))) %>%
+  mutate(country = fct_reorder(country, student_ratio)) %>%
+  ggplot(aes(country, student_ratio, fill = student_ratio)) +
+  geom_col() +
+  geom_text(aes(label = paste("Mean = ", mean(student_ratio))), y = 25, x = "Georgia") +
+  ylim(0, 100) +
+  scale_fill_viridis_c() +
+  coord_flip() +
+  expand_limits(y = 0) +
+  labs(title = "Countries with Highest and Lowest Secondary School Student/Teacher Ratios",
+       x = "",
+       y = "Student/Teacher ratio",
+       caption = "Secondary education as defined by UNESCO\nFigure 2",
+       fill = "Student-Teacher Ratio %") +
+  theme_minimal() +
+  theme(legend.position = "bottom",
+        plot.title = element_text(hjust = 0.5))
+
+student_teacher_ratio_2015_tert <- student_ratio %>%
+  dplyr::filter(indicator == "Tertiary Education",
+         year == 2015,
+         !is.na(student_ratio))
+student_teacher_ratio_2015_tert %>%
+  arrange(desc(student_ratio)) %>%
+  slice(c(1:10, seq(n() - 10, n()))) %>%
+  mutate(country = fct_reorder(country, student_ratio)) %>%
+  ggplot(aes(country, student_ratio, fill = student_ratio)) +
+  geom_col() +
+  geom_text(aes(label = paste("Mean = ", mean(student_ratio))), y = 25, x = "Armenia") +
+  scale_fill_viridis_c() +
+  ylim(0, 100) +
+  coord_flip() +
+  expand_limits(y = 0) +
+  labs(title = "Countries with Highest and Lowest Tertiary School Student/Teacher Ratios",
+       x = "",
+       y = "Student/Teacher ratio",
+       caption = "Tertiary education as defined by UNESCO\nFigure 3",
+       fill = "Student-Teacher Ratio %") +
+  theme_minimal() +
+  theme(legend.position = "bottom",
+        plot.title = element_text(hjust = 0.5))
+```
+
+It immediately appears that student/teacher ratio is negatively correlated with country wealth, both per capita and total. There are, however, some exceptions - the US, UK, and Switzerland do not have low student/teacher ratios, while relatively low income countries like Cuba, Greece, and Georgia do have lower ratios. There is also a big difference between the maximums of student-teacher ratios in secondary school and primary school where it seems primary school teachers can be assigned upwards of 50 students in some countries. The Syrian Arab Republic is an obvious outlier in the tertiary school grouping, which makes sense given the wartime status in 2015, but in general it seems like tertiary school takes a similar pattern to secondary school. Does this pattern mean that primary schools need more teachers per student?
+
+The distribution of student-teacher ratio across all levels has a slight right skew, and is almost bimodal.
+
+```{r echo = F, warning = F, message = F}
+student_teacher_ratio_2015 %>%
+  ggplot(aes(student_ratio)) +
+  geom_histogram(color = "black", fill = "white") +
+  geom_density(fill = "steelblue", alpha = 0.7) +
+  geom_vline(xintercept = mean(student_teacher_ratio_2015$student_ratio, na.rm = T), color = "red", linetype = "dashed", size = 1.5) +
+  geom_text(aes(label = "Mean Student-Teacher Ratio\n              (22.81)", x = mean(student_teacher_ratio_2015$student_ratio, na.rm = T), y = 12), hjust = -0.08, color = "red") +
+  scale_x_log10() +
+  labs(x = "Student-Teacher Ratio", y = "Count", title = "Distribution of Student to Teacher Ratio",
+       caption = "Figure 4") +
+  theme(plot.title = element_text(hjust = 0.5))
+```
+
+## Country Per Capita Wealth vs. Student/Teacher Ratio
+
+```{r echo = F, warning = F, fig.width = 10}
+student_teacher_ratio_2015 %>%
+  inner_join(wealth_education_data, by = "country_code") %>%
+  arrange(desc(SP.POP.TOTL)) %>%
+  ggplot(aes(NY.GDP.PCAP.CD, student_ratio)) +
+  geom_point(aes(size = SP.POP.TOTL, color = region)) +
+  geom_text(aes(label = country), vjust = 1, hjust = 1, check_overlap = TRUE) +
+  geom_smooth(formula = y ~ x, method = "lm", color = "black") +
+  ggpmisc::stat_poly_eq(aes(label = paste(stat(eq.label),
+                                  stat(rr.label), sep = "*\", \"*")),
+               formula = y ~ x, rr.digits = 3, coef.digits = 4,
+               parse = TRUE, label.x = "right") +
+  scale_color_viridis_d() +
+  scale_x_log10(labels = scales::comma) +
+  scale_y_log10() +
+  scale_size_continuous(labels = scales::comma_format(), range = c(.25, 12)) +
+  labs(x = "GDP Per Capita (log US $)",
+       y = "Student/Teacher Ratio (log scale)",
+       title = "GDP Per Capita vs. Student-Teacher Ratio in 2015",
+       caption = "Figure 5",
+       color = "Region",
+       size = "Population") +
+  theme(legend.position = "bottom",
+        plot.title = element_text(hjust = 0.5))
+```
+
+There is clearly a negative correlation between a country's wealth and its student/teacher ratio.
+
+## What Other Indicators Have an Impact?
+
+There's a bunch of other factors to test from WDI data, literacy has an obvious negative association with student-teacher ratio which is likely also strongly associated with country wealth. The quadratic relationship at hand is also clear here - there is a marginal increase in the rate at which literacy has an effect on primary school level student-teacher ratio as literacy rate declines. 
+
+```{r echo = F, warning = F, fig.width = 10}
+student_teacher_ratio_2015 %>%
+  inner_join(wealth_education_data, by = "country_code") %>%
+  dplyr::filter(!is.na(SE.ADT.LITR.ZS)) %>%
+  mutate(literacy = SE.ADT.LITR.ZS / 100) %>%
+  ggplot(aes(student_ratio, literacy)) +
+  geom_point(aes(color = region)) +
+  geom_text(aes(label = country), vjust = 1, hjust = 1, check_overlap = TRUE) +
+  geom_smooth(color = "black", se = F, formula = y ~ x + I(x^2), method = "lm") +
+  scale_color_viridis_d(guide = "legend") +
+  scale_x_log10() +
+  scale_y_continuous(labels = scales::percent_format()) +
+  labs(y = "Literacy", x = "Student-Teacher Ratio (log scale)", title = "Literacy Rates Progressivelt Decline with Student-Teacher Ratio",
+       caption = "Figure 6") +
+  theme(legend.position = "bottom",
+        plot.title = element_text(hjust = 0.5))
+```
+
+Secondary school enrollment follows suit linearly, showing a steady rate of increase with GDP per capita.
+
+```{r echo = F, warning = F, fig.width = 10}
+joined <- student_teacher_ratio_2015 %>%
+  inner_join(wealth_education_data, by = "country_code") %>%
+  mutate(secondary_enrollment = (SE.SEC.NENR.MA + SE.SEC.NENR.FE) / 2)
+joined %>%
+  arrange(desc(SP.POP.TOTL)) %>%
+  ggplot(aes(NY.GDP.PCAP.CD, secondary_enrollment, color = region)) +
+  geom_point() +
+  geom_text(aes(label = country), vjust = 1, hjust = 1, check_overlap = TRUE) +
+  geom_smooth(color = "black", se = F, method = "lm") +
+  scale_x_log10(labels = scales::dollar) +
+  ylim(0, 100) +
+  scale_color_viridis_d() +
+  labs(x = "GDP Per Capita (log US $)",
+       y = "Secondary School Enrollment",
+       title = "Secondary School Enrollment Significantly Increases with per Country per capita Wealth",
+       caption = "Figure 7") +
+  theme(legend.position = "bottom",
+        plot.title = element_text(hjust = 0.5))
+```
+
+Finally, looking at secondary school enrollment and student/teacher ratio, wealth appears to play the biggest roll again as there is significant negative association, but most countries clustered in the upper left are once again at the top of most GDP per capita rankings (PPP adjusted or otherwise). 
+
+```{r echo = F, warning = F, fig.width = 10}
+joined %>%
+  arrange(desc(SP.POP.TOTL)) %>%
+  ggplot(aes(student_ratio, secondary_enrollment, color = region)) +
+  geom_point() +
+  geom_text(aes(label = country), vjust = 1, hjust = 1, check_overlap = TRUE) +
+  geom_smooth(color = "black", se = F, method = "lm") +
+  scale_color_viridis_d() +
+  labs(x = "Student-teacher ratio in primary school",
+       y = "Secondary school enrollment",
+       title = "Secondary School Enrollment is Highly Regionally Clustered",
+       color = "Region",
+       caption = "Figure 8") +
+  theme(legend.position = c(0.8, 0.75),
+        plot.title = element_text(hjust = 0.5))
+```
+
+# Models and Post Hoc Analysis
+
+## Linear Regression
+
+I develop simple linear models which show that for each 1% increase in secondary enrollment a 0.449 decrease in student-teacher ratio is expected, and for each 1 point increase in GDP per capita a 6.817 point decrease in the student-teacher ratio is expected. So as GDP increases the student-teacher ratio decreases as is shown in figure 5.
+
+<center>
+```{r echo = F, warning = F, results = 'asis', fig.align='center'}
+ols1 <- joined %>%
+  transmute(student_ratio,
+            secondary_enrollment,
+            log2_gdp = log2(NY.GDP.PCAP.CD)) %>%
+  cor(use = "pairwise.complete.obs")
+ols1 <- lm(student_ratio ~ secondary_enrollment, data = joined)
+ols2 <- lm(student_ratio ~ log(NY.GDP.PCAP.CD), data = joined)
+stargazer::stargazer(ols1, ols2, type = "html", style = "qje",
+                     dep.var.labels = "Student Ratio",
+                     covariate.labels = c("Secondary Enrollment", "GDP Per Capita (US$)"),
+                     title = "Table 1")
+```
+</center>
+
+<br></br>
+Examining the confounding variable at hand - GDP per capita, we see similar results where student-teacher ratio declines about one point for each 1% increase in secondary enrollment after accounting for GDP per capita. This is the equivalent of saying for each 1 student increase in class size, and GDP we would expect to see secondary enrollment actually increase about 5%. The effects of GDP appear to be much larger than the effects of student-teacher ratio:
+<br></br>
+<br></br>
+
+<center>
+```{r echo = F, warning = F, results = 'asis', fig.align='center'}
+ols3 <- lm(secondary_enrollment ~ student_ratio + log(NY.GDP.PCAP.CD),
+     data = joined)
+stargazer::stargazer(ols3, type = "html", style = "qje",
+                     dep.var.labels = "Secondary Enrollment",
+                     covariate.labels = c("Student Ratio", "GDP Per Capita (US$)"),
+                     title = "Table 2")
+```
+</center>
+
+
+
+## Primary vs. secondary education
+
+A negative association is evident in both primary and secondary education with GDP, there is obviously an increased capacity to provide more teachers per student when there is a higher wealth per person, a metric which adjusts for population reasonably well.
+
+```{r echo = F, warning = F, fig.width = 12}
+secondary_primary_education <- student_ratio %>%
+  dplyr::filter(year == 2015,
+         !is.na(student_ratio),
+         indicator %in% c("Primary Education", "Secondary Education")) %>%
+  group_by(country) %>%
+  dplyr::filter(n() == 2) %>%
+  ungroup()
+secondary_primary_education %>%
+  inner_join(wealth_education_data, by = "country_code") %>%
+  arrange(desc(SP.POP.TOTL)) %>%
+  ggplot(aes(NY.GDP.PCAP.CD, student_ratio)) +
+  geom_point(aes(size = SP.POP.TOTL, color = region)) +
+  geom_text(aes(label = country), vjust = 1, hjust = 1, check_overlap = TRUE) +
+  scale_x_log10(labels = scales::comma) +
+  scale_y_log10() +
+  scale_color_viridis_d() +
+  scale_size_continuous(labels = scales::comma_format(), range = c(.25, 12)) +
+  facet_wrap(~ indicator, ncol = 1) +
+  labs(x = "GDP Per Capita (US $)",
+       y = "Student/Teacher Ratio in Primary Education",
+       title = "GDP Per Capita vs. Student/Teacher Ratio",
+       color = "Region",
+       size = "Population",
+       caption = "Figure 9") +
+  theme(legend.position = "bottom",
+        plot.title = element_text(hjust = 0.5))
+```
+
+Finally, checking whether there is any breakdown by region in the student-teacher ratio, I correlate by region the secondary and primary school ratios, and find the effects to be broadly the same. For South Asia there is clearly not enough data to make any determinations, and Bhutan, which has consistently been an outlier throughout the investigation of the data is the primary driver of the negative slope. It would certainly make an interesting case study.
+
+```{r fig.width = 12}
+secondary_primary_education %>%
+  inner_join(wealth_education_data, by = "country_code") %>%
+  select(indicator, country, student_ratio, region) %>%
+  mutate(indicator = snakecase::to_snake_case(indicator)) %>%
+  spread(indicator, student_ratio) %>%
+  mutate(ratio = secondary_education / primary_education) %>%
+  ggplot(aes(primary_education, secondary_education, color = region)) +
+  geom_point() +
+  geom_smooth(formula = y ~ x, method = "lm", se = F) +
+  ggpmisc::stat_poly_eq(aes(label = paste(stat(eq.label),
+                                  stat(rr.label), sep = "*\", \"*")),
+               formula = y ~ x, rr.digits = 3, coef.digits = 4,
+               parse = TRUE, label.x = "right", label.y = "bottom") +
+  geom_text(aes(label = country), vjust = 1, hjust = 1, check_overlap = TRUE) +
+  scale_color_viridis_d() +
+  labs(y = "Secondary Education Ratio", x = "Primary Education Ratio", color = "Primary/Secondary Ratio",
+       caption = "Figure 10") +
+  theme(legend.position = "bottom",
+        plot.title = element_text(hjust = 0.5))
+```
+
+# Conclusions
+
+A useful future method for analyzing the impact of student-teacher ratios would be some kind of universal test scores, so that impact could be assessed as well as associations. For full conclusions to be drawn from the data, a longitudinal dataset should be considered both to evaluate trends over time and to attain more statistically significant results. The average student-teacher ratio across all disciplines is 22.81 (figure 4), a class size that is just slightly over what most teachers prefer - 18 (Duflo et al. 2015). Breaking this down across educational level tells a very different story however, primary schools have an average student-teacher ratio of almost 30, while secondary and tertiary schools have averages of 20 and 19 respectively (figures 2, 3), with very few outliers. The innumerous possibilities of why this is the case don't seem to prevail on the logic that most would follow, where younger kids should need more teachers per student as they are tougher to control in the classroom, and require more individual focus in early development as most parenting literature has determined. Future investment of teaching resources should therefore be evaluated according to a philosophy that can address teaching at all levels, accounting for the necessities of each level individually. Additionally, where data is available it is obvious that where student-teacher ratios are greater than 30 literacy rates start to increasingly decline, meaning that if countries want to increase their literacy rates it may well be possible simply through increasing the overall number of teachers. Finally, GDP per capita has a significant association with all of these variables (figure5, tables 1 and 2), indicating that this may be a question of wealth/income, and the opportunity to provide more teachers to more classrooms in many cases. 
+
+
+# Citations
+
+Duflo, Esther & Dupas, Pascaline & Kremer, Michael, 2015. "School governance, teacher incentives, and pupil–teacher ratios: Experimental evidence from Kenyan primary schools," Journal of Public Economics, Elsevier, vol. 123(C), pages 92-110. 
+
+Fredriksson, P., B. Öckert and H. Oosterbeek (2013), “Long-Term effects of class size”, Quarterly Journal of Economics, Vol. 128/1, pp. 249-285, http://dx.doi.org/10.1093/qje/qjs048.
+
+Piketty, T. and M. Valdenaire (2006), “L’impact de la taille des classes sur la réussite scolaire dans les écoles, collèges et lycées français”, Les Dossiers: Enseignement scolaire, No. 173, http://www.education.gouv.fr/cid3865/l-impact-de-la-taille-des-classes-sur-la-reussite-scolaire-dans-les-ecoles-colleges-et-lycees-francais.html&xtmc=piketty&xtnp=1&xtcr=1 (accessed on 6 June 2019).
+
+

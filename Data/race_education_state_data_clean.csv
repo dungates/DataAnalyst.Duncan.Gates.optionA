@@ -1,0 +1,1429 @@
+state,education_level,education_percent,race,race_percent
+Arizona,Less than 9th Grade,5.7,White,77.21871655329124
+Arizona,Less than 9th Grade,5.7,Black,4.394311819234642
+Arizona,Less than 9th Grade,5.7,Asian,3.2949097303246075
+Arizona,Less than 9th Grade,5.7,Hispanic,31.14164525957345
+Arizona,"9th to 12th grade, no diploma",7.5,White,77.21871655329124
+Arizona,"9th to 12th grade, no diploma",7.5,Black,4.394311819234642
+Arizona,"9th to 12th grade, no diploma",7.5,Asian,3.2949097303246075
+Arizona,"9th to 12th grade, no diploma",7.5,Hispanic,31.14164525957345
+Arizona,High school graduate,24,White,77.21871655329124
+Arizona,High school graduate,24,Black,4.394311819234642
+Arizona,High school graduate,24,Asian,3.2949097303246075
+Arizona,High school graduate,24,Hispanic,31.14164525957345
+Arizona,"Some college, no degree",25.3,White,77.21871655329124
+Arizona,"Some college, no degree",25.3,Black,4.394311819234642
+Arizona,"Some college, no degree",25.3,Asian,3.2949097303246075
+Arizona,"Some college, no degree",25.3,Hispanic,31.14164525957345
+Arizona,Associate's degree,8.6,White,77.21871655329124
+Arizona,Associate's degree,8.6,Black,4.394311819234642
+Arizona,Associate's degree,8.6,Asian,3.2949097303246075
+Arizona,Associate's degree,8.6,Hispanic,31.14164525957345
+Arizona,Bachelor's degree,18,White,77.21871655329124
+Arizona,Bachelor's degree,18,Black,4.394311819234642
+Arizona,Bachelor's degree,18,Asian,3.2949097303246075
+Arizona,Bachelor's degree,18,Hispanic,31.14164525957345
+Arizona,Grad/pro degree,10.9,White,77.21871655329124
+Arizona,Grad/pro degree,10.9,Black,4.394311819234642
+Arizona,Grad/pro degree,10.9,Asian,3.2949097303246075
+Arizona,Grad/pro degree,10.9,Hispanic,31.14164525957345
+Arkansas,Less than 9th Grade,5,White,77.00191696111006
+Arkansas,Less than 9th Grade,5,Black,15.413597818014754
+Arkansas,Less than 9th Grade,5,Asian,1.4708404903113714
+Arkansas,Less than 9th Grade,5,Hispanic,7.324510118297867
+Arkansas,"9th to 12th grade, no diploma",8.8,White,77.00191696111006
+Arkansas,"9th to 12th grade, no diploma",8.8,Black,15.413597818014754
+Arkansas,"9th to 12th grade, no diploma",8.8,Asian,1.4708404903113714
+Arkansas,"9th to 12th grade, no diploma",8.8,Hispanic,7.324510118297867
+Arkansas,High school graduate,34.1,White,77.00191696111006
+Arkansas,High school graduate,34.1,Black,15.413597818014754
+Arkansas,High school graduate,34.1,Asian,1.4708404903113714
+Arkansas,High school graduate,34.1,Hispanic,7.324510118297867
+Arkansas,"Some college, no degree",22.6,White,77.00191696111006
+Arkansas,"Some college, no degree",22.6,Black,15.413597818014754
+Arkansas,"Some college, no degree",22.6,Asian,1.4708404903113714
+Arkansas,"Some college, no degree",22.6,Hispanic,7.324510118297867
+Arkansas,Associate's degree,7,White,77.00191696111006
+Arkansas,Associate's degree,7,Black,15.413597818014754
+Arkansas,Associate's degree,7,Asian,1.4708404903113714
+Arkansas,Associate's degree,7,Hispanic,7.324510118297867
+Arkansas,Bachelor's degree,14.4,White,77.00191696111006
+Arkansas,Bachelor's degree,14.4,Black,15.413597818014754
+Arkansas,Bachelor's degree,14.4,Asian,1.4708404903113714
+Arkansas,Bachelor's degree,14.4,Hispanic,7.324510118297867
+Arkansas,Grad/pro degree,8.1,White,77.00191696111006
+Arkansas,Grad/pro degree,8.1,Black,15.413597818014754
+Arkansas,Grad/pro degree,8.1,Asian,1.4708404903113714
+Arkansas,Grad/pro degree,8.1,Hispanic,7.324510118297867
+California,Less than 9th Grade,9.4,White,60.101694153275865
+California,Less than 9th Grade,9.4,Black,5.792967644441357
+California,Less than 9th Grade,9.4,Asian,14.315495561034371
+California,Less than 9th Grade,9.4,Hispanic,38.881377085762104
+California,"9th to 12th grade, no diploma",7.6,White,60.101694153275865
+California,"9th to 12th grade, no diploma",7.6,Black,5.792967644441357
+California,"9th to 12th grade, no diploma",7.6,Asian,14.315495561034371
+California,"9th to 12th grade, no diploma",7.6,Hispanic,38.881377085762104
+California,High school graduate,20.6,White,60.101694153275865
+California,High school graduate,20.6,Black,5.792967644441357
+California,High school graduate,20.6,Asian,14.315495561034371
+California,High school graduate,20.6,Hispanic,38.881377085762104
+California,"Some college, no degree",21.3,White,60.101694153275865
+California,"Some college, no degree",21.3,Black,5.792967644441357
+California,"Some college, no degree",21.3,Asian,14.315495561034371
+California,"Some college, no degree",21.3,Hispanic,38.881377085762104
+California,Associate's degree,7.8,White,60.101694153275865
+California,Associate's degree,7.8,Black,5.792967644441357
+California,Associate's degree,7.8,Asian,14.315495561034371
+California,Associate's degree,7.8,Hispanic,38.881377085762104
+California,Bachelor's degree,20.8,White,60.101694153275865
+California,Bachelor's degree,20.8,Black,5.792967644441357
+California,Bachelor's degree,20.8,Asian,14.315495561034371
+California,Bachelor's degree,20.8,Hispanic,38.881377085762104
+California,Grad/pro degree,12.5,White,60.101694153275865
+California,Grad/pro degree,12.5,Black,5.792967644441357
+California,Grad/pro degree,12.5,Asian,14.315495561034371
+California,Grad/pro degree,12.5,Hispanic,38.881377085762104
+Colorado,Less than 9th Grade,3.6,White,84.17040896263538
+Colorado,Less than 9th Grade,3.6,Black,4.120994203546791
+Colorado,Less than 9th Grade,3.6,Asian,3.122231018880191
+Colorado,Less than 9th Grade,3.6,Hispanic,21.42042663530002
+Colorado,"9th to 12th grade, no diploma",5,White,84.17040896263538
+Colorado,"9th to 12th grade, no diploma",5,Black,4.120994203546791
+Colorado,"9th to 12th grade, no diploma",5,Asian,3.122231018880191
+Colorado,"9th to 12th grade, no diploma",5,Hispanic,21.42042663530002
+Colorado,High school graduate,21.4,White,84.17040896263538
+Colorado,High school graduate,21.4,Black,4.120994203546791
+Colorado,High school graduate,21.4,Asian,3.122231018880191
+Colorado,High school graduate,21.4,Hispanic,21.42042663530002
+Colorado,"Some college, no degree",21.4,White,84.17040896263538
+Colorado,"Some college, no degree",21.4,Black,4.120994203546791
+Colorado,"Some college, no degree",21.4,Asian,3.122231018880191
+Colorado,"Some college, no degree",21.4,Hispanic,21.42042663530002
+Colorado,Associate's degree,8.4,White,84.17040896263538
+Colorado,Associate's degree,8.4,Black,4.120994203546791
+Colorado,Associate's degree,8.4,Asian,3.122231018880191
+Colorado,Associate's degree,8.4,Hispanic,21.42042663530002
+Colorado,Bachelor's degree,25.2,White,84.17040896263538
+Colorado,Bachelor's degree,25.2,Black,4.120994203546791
+Colorado,Bachelor's degree,25.2,Asian,3.122231018880191
+Colorado,Bachelor's degree,25.2,Hispanic,21.42042663530002
+Colorado,Grad/pro degree,15,White,84.17040896263538
+Colorado,Grad/pro degree,15,Black,4.120994203546791
+Colorado,Grad/pro degree,15,Asian,3.122231018880191
+Colorado,Grad/pro degree,15,Hispanic,21.42042663530002
+Connecticut,Less than 9th Grade,4.1,White,76.36121584675041
+Connecticut,Less than 9th Grade,4.1,Black,10.561540626507746
+Connecticut,Less than 9th Grade,4.1,Asian,4.434366121048587
+Connecticut,Less than 9th Grade,4.1,Hispanic,15.68589620449956
+Connecticut,"9th to 12th grade, no diploma",5.4,White,76.36121584675041
+Connecticut,"9th to 12th grade, no diploma",5.4,Black,10.561540626507746
+Connecticut,"9th to 12th grade, no diploma",5.4,Asian,4.434366121048587
+Connecticut,"9th to 12th grade, no diploma",5.4,Hispanic,15.68589620449956
+Connecticut,High school graduate,27.1,White,76.36121584675041
+Connecticut,High school graduate,27.1,Black,10.561540626507746
+Connecticut,High school graduate,27.1,Asian,4.434366121048587
+Connecticut,High school graduate,27.1,Hispanic,15.68589620449956
+Connecticut,"Some college, no degree",16.8,White,76.36121584675041
+Connecticut,"Some college, no degree",16.8,Black,10.561540626507746
+Connecticut,"Some college, no degree",16.8,Asian,4.434366121048587
+Connecticut,"Some college, no degree",16.8,Hispanic,15.68589620449956
+Connecticut,Associate's degree,7.7,White,76.36121584675041
+Connecticut,Associate's degree,7.7,Black,10.561540626507746
+Connecticut,Associate's degree,7.7,Asian,4.434366121048587
+Connecticut,Associate's degree,7.7,Hispanic,15.68589620449956
+Connecticut,Bachelor's degree,21.7,White,76.36121584675041
+Connecticut,Bachelor's degree,21.7,Black,10.561540626507746
+Connecticut,Bachelor's degree,21.7,Asian,4.434366121048587
+Connecticut,Bachelor's degree,21.7,Hispanic,15.68589620449956
+Connecticut,Grad/pro degree,17.2,White,76.36121584675041
+Connecticut,Grad/pro degree,17.2,Black,10.561540626507746
+Connecticut,Grad/pro degree,17.2,Asian,4.434366121048587
+Connecticut,Grad/pro degree,17.2,Hispanic,15.68589620449956
+District of Columbia,Less than 9th Grade,3.9,White,40.97440752200883
+District of Columbia,Less than 9th Grade,3.9,Black,46.9419925259095
+District of Columbia,Less than 9th Grade,3.9,Asian,3.903298475671222
+District of Columbia,Less than 9th Grade,3.9,Hispanic,10.924210151088827
+District of Columbia,"9th to 12th grade, no diploma",5.5,White,40.97440752200883
+District of Columbia,"9th to 12th grade, no diploma",5.5,Black,46.9419925259095
+District of Columbia,"9th to 12th grade, no diploma",5.5,Asian,3.903298475671222
+District of Columbia,"9th to 12th grade, no diploma",5.5,Hispanic,10.924210151088827
+District of Columbia,High school graduate,17.2,White,40.97440752200883
+District of Columbia,High school graduate,17.2,Black,46.9419925259095
+District of Columbia,High school graduate,17.2,Asian,3.903298475671222
+District of Columbia,High school graduate,17.2,Hispanic,10.924210151088827
+District of Columbia,"Some college, no degree",12.9,White,40.97440752200883
+District of Columbia,"Some college, no degree",12.9,Black,46.9419925259095
+District of Columbia,"Some college, no degree",12.9,Asian,3.903298475671222
+District of Columbia,"Some college, no degree",12.9,Hispanic,10.924210151088827
+District of Columbia,Associate's degree,3,White,40.97440752200883
+District of Columbia,Associate's degree,3,Black,46.9419925259095
+District of Columbia,Associate's degree,3,Asian,3.903298475671222
+District of Columbia,Associate's degree,3,Hispanic,10.924210151088827
+District of Columbia,Bachelor's degree,24.4,White,40.97440752200883
+District of Columbia,Bachelor's degree,24.4,Black,46.9419925259095
+District of Columbia,Bachelor's degree,24.4,Asian,3.903298475671222
+District of Columbia,Bachelor's degree,24.4,Hispanic,10.924210151088827
+District of Columbia,Grad/pro degree,33.2,White,40.97440752200883
+District of Columbia,Grad/pro degree,33.2,Black,46.9419925259095
+District of Columbia,Grad/pro degree,33.2,Asian,3.903298475671222
+District of Columbia,Grad/pro degree,33.2,Hispanic,10.924210151088827
+Georgia,Less than 9th Grade,4.8,White,59.043315823554565
+Georgia,Less than 9th Grade,4.8,Black,31.457198671054016
+Georgia,Less than 9th Grade,4.8,Asian,3.908731492080978
+Georgia,Less than 9th Grade,4.8,Hispanic,9.40485073829685
+Georgia,"9th to 12th grade, no diploma",8.5,White,59.043315823554565
+Georgia,"9th to 12th grade, no diploma",8.5,Black,31.457198671054016
+Georgia,"9th to 12th grade, no diploma",8.5,Asian,3.908731492080978
+Georgia,"9th to 12th grade, no diploma",8.5,Hispanic,9.40485073829685
+Georgia,High school graduate,27.9,White,59.043315823554565
+Georgia,High school graduate,27.9,Black,31.457198671054016
+Georgia,High school graduate,27.9,Asian,3.908731492080978
+Georgia,High school graduate,27.9,Hispanic,9.40485073829685
+Georgia,"Some college, no degree",20.5,White,59.043315823554565
+Georgia,"Some college, no degree",20.5,Black,31.457198671054016
+Georgia,"Some college, no degree",20.5,Asian,3.908731492080978
+Georgia,"Some college, no degree",20.5,Hispanic,9.40485073829685
+Georgia,Associate's degree,7.6,White,59.043315823554565
+Georgia,Associate's degree,7.6,Black,31.457198671054016
+Georgia,Associate's degree,7.6,Asian,3.908731492080978
+Georgia,Associate's degree,7.6,Hispanic,9.40485073829685
+Georgia,Bachelor's degree,18.9,White,59.043315823554565
+Georgia,Bachelor's degree,18.9,Black,31.457198671054016
+Georgia,Bachelor's degree,18.9,Asian,3.908731492080978
+Georgia,Bachelor's degree,18.9,Hispanic,9.40485073829685
+Georgia,Grad/pro degree,11.7,White,59.043315823554565
+Georgia,Grad/pro degree,11.7,Black,31.457198671054016
+Georgia,Grad/pro degree,11.7,Asian,3.908731492080978
+Georgia,Grad/pro degree,11.7,Hispanic,9.40485073829685
+Illinois,Less than 9th Grade,5,White,71.67014116994295
+Illinois,Less than 9th Grade,5,Black,14.227082843758415
+Illinois,Less than 9th Grade,5,Asian,5.387997984946687
+Illinois,Less than 9th Grade,5,Hispanic,16.962465459376546
+Illinois,"9th to 12th grade, no diploma",6.1,White,71.67014116994295
+Illinois,"9th to 12th grade, no diploma",6.1,Black,14.227082843758415
+Illinois,"9th to 12th grade, no diploma",6.1,Asian,5.387997984946687
+Illinois,"9th to 12th grade, no diploma",6.1,Hispanic,16.962465459376546
+Illinois,High school graduate,26.1,White,71.67014116994295
+Illinois,High school graduate,26.1,Black,14.227082843758415
+Illinois,High school graduate,26.1,Asian,5.387997984946687
+Illinois,High school graduate,26.1,Hispanic,16.962465459376546
+Illinois,"Some college, no degree",20.7,White,71.67014116994295
+Illinois,"Some college, no degree",20.7,Black,14.227082843758415
+Illinois,"Some college, no degree",20.7,Asian,5.387997984946687
+Illinois,"Some college, no degree",20.7,Hispanic,16.962465459376546
+Illinois,Associate's degree,8,White,71.67014116994295
+Illinois,Associate's degree,8,Black,14.227082843758415
+Illinois,Associate's degree,8,Asian,5.387997984946687
+Illinois,Associate's degree,8,Hispanic,16.962465459376546
+Illinois,Bachelor's degree,20.8,White,71.67014116994295
+Illinois,Bachelor's degree,20.8,Black,14.227082843758415
+Illinois,Bachelor's degree,20.8,Asian,5.387997984946687
+Illinois,Bachelor's degree,20.8,Hispanic,16.962465459376546
+Illinois,Grad/pro degree,13.3,White,71.67014116994295
+Illinois,Grad/pro degree,13.3,Black,14.227082843758415
+Illinois,Grad/pro degree,13.3,Asian,5.387997984946687
+Illinois,Grad/pro degree,13.3,Hispanic,16.962465459376546
+Indiana,Less than 9th Grade,3.7,White,83.5907925753146
+Indiana,Less than 9th Grade,3.7,Black,9.333015539457614
+Indiana,Less than 9th Grade,3.7,Asian,2.1844461994755195
+Indiana,Less than 9th Grade,3.7,Hispanic,6.783759246430771
+Indiana,"9th to 12th grade, no diploma",7.7,White,83.5907925753146
+Indiana,"9th to 12th grade, no diploma",7.7,Black,9.333015539457614
+Indiana,"9th to 12th grade, no diploma",7.7,Asian,2.1844461994755195
+Indiana,"9th to 12th grade, no diploma",7.7,Hispanic,6.783759246430771
+Indiana,High school graduate,33.5,White,83.5907925753146
+Indiana,High school graduate,33.5,Black,9.333015539457614
+Indiana,High school graduate,33.5,Asian,2.1844461994755195
+Indiana,High school graduate,33.5,Hispanic,6.783759246430771
+Indiana,"Some college, no degree",20.4,White,83.5907925753146
+Indiana,"Some college, no degree",20.4,Black,9.333015539457614
+Indiana,"Some college, no degree",20.4,Asian,2.1844461994755195
+Indiana,"Some college, no degree",20.4,Hispanic,6.783759246430771
+Indiana,Associate's degree,8.7,White,83.5907925753146
+Indiana,Associate's degree,8.7,Black,9.333015539457614
+Indiana,Associate's degree,8.7,Asian,2.1844461994755195
+Indiana,Associate's degree,8.7,Hispanic,6.783759246430771
+Indiana,Bachelor's degree,16.5,White,83.5907925753146
+Indiana,Bachelor's degree,16.5,Black,9.333015539457614
+Indiana,Bachelor's degree,16.5,Asian,2.1844461994755195
+Indiana,Bachelor's degree,16.5,Hispanic,6.783759246430771
+Indiana,Grad/pro degree,9.4,White,83.5907925753146
+Indiana,Grad/pro degree,9.4,Black,9.333015539457614
+Indiana,Grad/pro degree,9.4,Asian,2.1844461994755195
+Indiana,Grad/pro degree,9.4,Hispanic,6.783759246430771
+Louisiana,Less than 9th Grade,5.1,White,62.207222893137
+Louisiana,Less than 9th Grade,5.1,Black,32.22640972155512
+Louisiana,Less than 9th Grade,5.1,Asian,1.712662449052409
+Louisiana,Less than 9th Grade,5.1,Hispanic,5.03729295036298
+Louisiana,"9th to 12th grade, no diploma",10.1,White,62.207222893137
+Louisiana,"9th to 12th grade, no diploma",10.1,Black,32.22640972155512
+Louisiana,"9th to 12th grade, no diploma",10.1,Asian,1.712662449052409
+Louisiana,"9th to 12th grade, no diploma",10.1,Hispanic,5.03729295036298
+Louisiana,High school graduate,34,White,62.207222893137
+Louisiana,High school graduate,34,Black,32.22640972155512
+Louisiana,High school graduate,34,Asian,1.712662449052409
+Louisiana,High school graduate,34,Hispanic,5.03729295036298
+Louisiana,"Some college, no degree",21.1,White,62.207222893137
+Louisiana,"Some college, no degree",21.1,Black,32.22640972155512
+Louisiana,"Some college, no degree",21.1,Asian,1.712662449052409
+Louisiana,"Some college, no degree",21.1,Hispanic,5.03729295036298
+Louisiana,Associate's degree,6,White,62.207222893137
+Louisiana,Associate's degree,6,Black,32.22640972155512
+Louisiana,Associate's degree,6,Asian,1.712662449052409
+Louisiana,Associate's degree,6,Hispanic,5.03729295036298
+Louisiana,Bachelor's degree,15.5,White,62.207222893137
+Louisiana,Bachelor's degree,15.5,Black,32.22640972155512
+Louisiana,Bachelor's degree,15.5,Asian,1.712662449052409
+Louisiana,Bachelor's degree,15.5,Hispanic,5.03729295036298
+Louisiana,Grad/pro degree,8.2,White,62.207222893137
+Louisiana,Grad/pro degree,8.2,Black,32.22640972155512
+Louisiana,Grad/pro degree,8.2,Asian,1.712662449052409
+Louisiana,Grad/pro degree,8.2,Hispanic,5.03729295036298
+Minnesota,Less than 9th Grade,2.9,White,83.33174728324093
+Minnesota,Less than 9th Grade,2.9,Black,6.190769622666019
+Minnesota,Less than 9th Grade,2.9,Asian,4.74655341665946
+Minnesota,Less than 9th Grade,2.9,Hispanic,5.296635390723742
+Minnesota,"9th to 12th grade, no diploma",4.1,White,83.33174728324093
+Minnesota,"9th to 12th grade, no diploma",4.1,Black,6.190769622666019
+Minnesota,"9th to 12th grade, no diploma",4.1,Asian,4.74655341665946
+Minnesota,"9th to 12th grade, no diploma",4.1,Hispanic,5.296635390723742
+Minnesota,High school graduate,24.9,White,83.33174728324093
+Minnesota,High school graduate,24.9,Black,6.190769622666019
+Minnesota,High school graduate,24.9,Asian,4.74655341665946
+Minnesota,High school graduate,24.9,Hispanic,5.296635390723742
+Minnesota,"Some college, no degree",21.2,White,83.33174728324093
+Minnesota,"Some college, no degree",21.2,Black,6.190769622666019
+Minnesota,"Some college, no degree",21.2,Asian,4.74655341665946
+Minnesota,"Some college, no degree",21.2,Hispanic,5.296635390723742
+Minnesota,Associate's degree,11.4,White,83.33174728324093
+Minnesota,Associate's degree,11.4,Black,6.190769622666019
+Minnesota,Associate's degree,11.4,Asian,4.74655341665946
+Minnesota,Associate's degree,11.4,Hispanic,5.296635390723742
+Minnesota,Bachelor's degree,23.3,White,83.33174728324093
+Minnesota,Bachelor's degree,23.3,Black,6.190769622666019
+Minnesota,Bachelor's degree,23.3,Asian,4.74655341665946
+Minnesota,Bachelor's degree,23.3,Hispanic,5.296635390723742
+Minnesota,Grad/pro degree,12.1,White,83.33174728324093
+Minnesota,Grad/pro degree,12.1,Black,6.190769622666019
+Minnesota,Grad/pro degree,12.1,Asian,4.74655341665946
+Minnesota,Grad/pro degree,12.1,Hispanic,5.296635390723742
+Mississippi,Less than 9th Grade,5.4,White,58.59258783402627
+Mississippi,Less than 9th Grade,5.4,Black,37.6689077283504
+Mississippi,Less than 9th Grade,5.4,Asian,0.9473153098172421
+Mississippi,Less than 9th Grade,5.4,Hispanic,3.027775379906463
+Mississippi,"9th to 12th grade, no diploma",10.7,White,58.59258783402627
+Mississippi,"9th to 12th grade, no diploma",10.7,Black,37.6689077283504
+Mississippi,"9th to 12th grade, no diploma",10.7,Asian,0.9473153098172421
+Mississippi,"9th to 12th grade, no diploma",10.7,Hispanic,3.027775379906463
+Mississippi,High school graduate,30.3,White,58.59258783402627
+Mississippi,High school graduate,30.3,Black,37.6689077283504
+Mississippi,High school graduate,30.3,Asian,0.9473153098172421
+Mississippi,High school graduate,30.3,Hispanic,3.027775379906463
+Mississippi,"Some college, no degree",22.4,White,58.59258783402627
+Mississippi,"Some college, no degree",22.4,Black,37.6689077283504
+Mississippi,"Some college, no degree",22.4,Asian,0.9473153098172421
+Mississippi,"Some college, no degree",22.4,Hispanic,3.027775379906463
+Mississippi,Associate's degree,9.4,White,58.59258783402627
+Mississippi,Associate's degree,9.4,Black,37.6689077283504
+Mississippi,Associate's degree,9.4,Asian,0.9473153098172421
+Mississippi,Associate's degree,9.4,Hispanic,3.027775379906463
+Mississippi,Bachelor's degree,13.5,White,58.59258783402627
+Mississippi,Bachelor's degree,13.5,Black,37.6689077283504
+Mississippi,Bachelor's degree,13.5,Asian,0.9473153098172421
+Mississippi,Bachelor's degree,13.5,Hispanic,3.027775379906463
+Mississippi,Grad/pro degree,8.3,White,58.59258783402627
+Mississippi,Grad/pro degree,8.3,Black,37.6689077283504
+Mississippi,Grad/pro degree,8.3,Asian,0.9473153098172421
+Mississippi,Grad/pro degree,8.3,Hispanic,3.027775379906463
+Montana,Less than 9th Grade,2,White,88.85605894798279
+Montana,Less than 9th Grade,2,Black,0.44445212396278505
+Montana,Less than 9th Grade,2,Asian,0.7628641531603138
+Montana,Less than 9th Grade,2,Hispanic,3.745589076653112
+Montana,"9th to 12th grade, no diploma",4.8,White,88.85605894798279
+Montana,"9th to 12th grade, no diploma",4.8,Black,0.44445212396278505
+Montana,"9th to 12th grade, no diploma",4.8,Asian,0.7628641531603138
+Montana,"9th to 12th grade, no diploma",4.8,Hispanic,3.745589076653112
+Montana,High school graduate,29.2,White,88.85605894798279
+Montana,High school graduate,29.2,Black,0.44445212396278505
+Montana,High school graduate,29.2,Asian,0.7628641531603138
+Montana,High school graduate,29.2,Hispanic,3.745589076653112
+Montana,"Some college, no degree",23.8,White,88.85605894798279
+Montana,"Some college, no degree",23.8,Black,0.44445212396278505
+Montana,"Some college, no degree",23.8,Asian,0.7628641531603138
+Montana,"Some college, no degree",23.8,Hispanic,3.745589076653112
+Montana,Associate's degree,9,White,88.85605894798279
+Montana,Associate's degree,9,Black,0.44445212396278505
+Montana,Associate's degree,9,Asian,0.7628641531603138
+Montana,Associate's degree,9,Hispanic,3.745589076653112
+Montana,Bachelor's degree,20.8,White,88.85605894798279
+Montana,Bachelor's degree,20.8,Black,0.44445212396278505
+Montana,Bachelor's degree,20.8,Asian,0.7628641531603138
+Montana,Bachelor's degree,20.8,Hispanic,3.745589076653112
+Montana,Grad/pro degree,10.4,White,88.85605894798279
+Montana,Grad/pro degree,10.4,Black,0.44445212396278505
+Montana,Grad/pro degree,10.4,Asian,0.7628641531603138
+Montana,Grad/pro degree,10.4,Hispanic,3.745589076653112
+New Mexico,Less than 9th Grade,6.2,White,74.5010834272431
+New Mexico,Less than 9th Grade,6.2,Black,2.0553097493158683
+New Mexico,Less than 9th Grade,6.2,Asian,1.5060451130119277
+New Mexico,Less than 9th Grade,6.2,Hispanic,48.5439923075232
+New Mexico,"9th to 12th grade, no diploma",8.5,White,74.5010834272431
+New Mexico,"9th to 12th grade, no diploma",8.5,Black,2.0553097493158683
+New Mexico,"9th to 12th grade, no diploma",8.5,Asian,1.5060451130119277
+New Mexico,"9th to 12th grade, no diploma",8.5,Hispanic,48.5439923075232
+New Mexico,High school graduate,26.4,White,74.5010834272431
+New Mexico,High school graduate,26.4,Black,2.0553097493158683
+New Mexico,High school graduate,26.4,Asian,1.5060451130119277
+New Mexico,High school graduate,26.4,Hispanic,48.5439923075232
+New Mexico,"Some college, no degree",23.5,White,74.5010834272431
+New Mexico,"Some college, no degree",23.5,Black,2.0553097493158683
+New Mexico,"Some college, no degree",23.5,Asian,1.5060451130119277
+New Mexico,"Some college, no degree",23.5,Hispanic,48.5439923075232
+New Mexico,Associate's degree,8.2,White,74.5010834272431
+New Mexico,Associate's degree,8.2,Black,2.0553097493158683
+New Mexico,Associate's degree,8.2,Asian,1.5060451130119277
+New Mexico,Associate's degree,8.2,Hispanic,48.5439923075232
+New Mexico,Bachelor's degree,15.3,White,74.5010834272431
+New Mexico,Bachelor's degree,15.3,Black,2.0553097493158683
+New Mexico,Bachelor's degree,15.3,Asian,1.5060451130119277
+New Mexico,Bachelor's degree,15.3,Hispanic,48.5439923075232
+New Mexico,Grad/pro degree,11.8,White,74.5010834272431
+New Mexico,Grad/pro degree,11.8,Black,2.0553097493158683
+New Mexico,Grad/pro degree,11.8,Asian,1.5060451130119277
+New Mexico,Grad/pro degree,11.8,Hispanic,48.5439923075232
+North Dakota,Less than 9th Grade,3.2,White,87.11341782316163
+North Dakota,Less than 9th Grade,3.2,Black,2.7180235070147476
+North Dakota,Less than 9th Grade,3.2,Asian,1.4376476500297128
+North Dakota,Less than 9th Grade,3.2,Hispanic,3.526849871244521
+North Dakota,"9th to 12th grade, no diploma",4.3,White,87.11341782316163
+North Dakota,"9th to 12th grade, no diploma",4.3,Black,2.7180235070147476
+North Dakota,"9th to 12th grade, no diploma",4.3,Asian,1.4376476500297128
+North Dakota,"9th to 12th grade, no diploma",4.3,Hispanic,3.526849871244521
+North Dakota,High school graduate,26.8,White,87.11341782316163
+North Dakota,High school graduate,26.8,Black,2.7180235070147476
+North Dakota,High school graduate,26.8,Asian,1.4376476500297128
+North Dakota,High school graduate,26.8,Hispanic,3.526849871244521
+North Dakota,"Some college, no degree",22.6,White,87.11341782316163
+North Dakota,"Some college, no degree",22.6,Black,2.7180235070147476
+North Dakota,"Some college, no degree",22.6,Asian,1.4376476500297128
+North Dakota,"Some college, no degree",22.6,Hispanic,3.526849871244521
+North Dakota,Associate's degree,13.7,White,87.11341782316163
+North Dakota,Associate's degree,13.7,Black,2.7180235070147476
+North Dakota,Associate's degree,13.7,Asian,1.4376476500297128
+North Dakota,Associate's degree,13.7,Hispanic,3.526849871244521
+North Dakota,Bachelor's degree,21.5,White,87.11341782316163
+North Dakota,Bachelor's degree,21.5,Black,2.7180235070147476
+North Dakota,Bachelor's degree,21.5,Asian,1.4376476500297128
+North Dakota,Bachelor's degree,21.5,Hispanic,3.526849871244521
+North Dakota,Grad/pro degree,7.9,White,87.11341782316163
+North Dakota,Grad/pro degree,7.9,Black,2.7180235070147476
+North Dakota,Grad/pro degree,7.9,Asian,1.4376476500297128
+North Dakota,Grad/pro degree,7.9,Hispanic,3.526849871244521
+Oklahoma,Less than 9th Grade,4.1,White,72.42656395118394
+Oklahoma,Less than 9th Grade,4.1,Black,7.349385690188985
+Oklahoma,Less than 9th Grade,4.1,Asian,2.1283584519887895
+Oklahoma,Less than 9th Grade,4.1,Hispanic,10.400886952140775
+Oklahoma,"9th to 12th grade, no diploma",8.1,White,72.42656395118394
+Oklahoma,"9th to 12th grade, no diploma",8.1,Black,7.349385690188985
+Oklahoma,"9th to 12th grade, no diploma",8.1,Asian,2.1283584519887895
+Oklahoma,"9th to 12th grade, no diploma",8.1,Hispanic,10.400886952140775
+Oklahoma,High school graduate,31.3,White,72.42656395118394
+Oklahoma,High school graduate,31.3,Black,7.349385690188985
+Oklahoma,High school graduate,31.3,Asian,2.1283584519887895
+Oklahoma,High school graduate,31.3,Hispanic,10.400886952140775
+Oklahoma,"Some college, no degree",23.6,White,72.42656395118394
+Oklahoma,"Some college, no degree",23.6,Black,7.349385690188985
+Oklahoma,"Some college, no degree",23.6,Asian,2.1283584519887895
+Oklahoma,"Some college, no degree",23.6,Hispanic,10.400886952140775
+Oklahoma,Associate's degree,7.7,White,72.42656395118394
+Oklahoma,Associate's degree,7.7,Black,7.349385690188985
+Oklahoma,Associate's degree,7.7,Asian,2.1283584519887895
+Oklahoma,Associate's degree,7.7,Hispanic,10.400886952140775
+Oklahoma,Bachelor's degree,16.7,White,72.42656395118394
+Oklahoma,Bachelor's degree,16.7,Black,7.349385690188985
+Oklahoma,Bachelor's degree,16.7,Asian,2.1283584519887895
+Oklahoma,Bachelor's degree,16.7,Hispanic,10.400886952140775
+Oklahoma,Grad/pro degree,8.5,White,72.42656395118394
+Oklahoma,Grad/pro degree,8.5,Black,7.349385690188985
+Oklahoma,Grad/pro degree,8.5,Asian,2.1283584519887895
+Oklahoma,Grad/pro degree,8.5,Hispanic,10.400886952140775
+Pennsylvania,Less than 9th Grade,3.3,White,80.84821878448909
+Pennsylvania,Less than 9th Grade,3.3,Black,11.127346255205051
+Pennsylvania,Less than 9th Grade,3.3,Asian,3.3452110481432475
+Pennsylvania,Less than 9th Grade,3.3,Hispanic,7.076406783705116
+Pennsylvania,"9th to 12th grade, no diploma",6.5,White,80.84821878448909
+Pennsylvania,"9th to 12th grade, no diploma",6.5,Black,11.127346255205051
+Pennsylvania,"9th to 12th grade, no diploma",6.5,Asian,3.3452110481432475
+Pennsylvania,"9th to 12th grade, no diploma",6.5,Hispanic,7.076406783705116
+Pennsylvania,High school graduate,35.1,White,80.84821878448909
+Pennsylvania,High school graduate,35.1,Black,11.127346255205051
+Pennsylvania,High school graduate,35.1,Asian,3.3452110481432475
+Pennsylvania,High school graduate,35.1,Hispanic,7.076406783705116
+Pennsylvania,"Some college, no degree",16,White,80.84821878448909
+Pennsylvania,"Some college, no degree",16,Black,11.127346255205051
+Pennsylvania,"Some college, no degree",16,Asian,3.3452110481432475
+Pennsylvania,"Some college, no degree",16,Hispanic,7.076406783705116
+Pennsylvania,Associate's degree,8.3,White,80.84821878448909
+Pennsylvania,Associate's degree,8.3,Black,11.127346255205051
+Pennsylvania,Associate's degree,8.3,Asian,3.3452110481432475
+Pennsylvania,Associate's degree,8.3,Hispanic,7.076406783705116
+Pennsylvania,Bachelor's degree,18.6,White,80.84821878448909
+Pennsylvania,Bachelor's degree,18.6,Black,11.127346255205051
+Pennsylvania,Bachelor's degree,18.6,Asian,3.3452110481432475
+Pennsylvania,Bachelor's degree,18.6,Hispanic,7.076406783705116
+Pennsylvania,Grad/pro degree,12.1,White,80.84821878448909
+Pennsylvania,Grad/pro degree,12.1,Black,11.127346255205051
+Pennsylvania,Grad/pro degree,12.1,Asian,3.3452110481432475
+Pennsylvania,Grad/pro degree,12.1,Hispanic,7.076406783705116
+Tennessee,Less than 9th Grade,4.8,White,77.67496420510987
+Tennessee,Less than 9th Grade,4.8,Black,16.801594445661454
+Tennessee,Less than 9th Grade,4.8,Asian,1.697691911805721
+Tennessee,Less than 9th Grade,4.8,Hispanic,5.2984105309671845
+Tennessee,"9th to 12th grade, no diploma",8.2,White,77.67496420510987
+Tennessee,"9th to 12th grade, no diploma",8.2,Black,16.801594445661454
+Tennessee,"9th to 12th grade, no diploma",8.2,Asian,1.697691911805721
+Tennessee,"9th to 12th grade, no diploma",8.2,Hispanic,5.2984105309671845
+Tennessee,High school graduate,32.4,White,77.67496420510987
+Tennessee,High school graduate,32.4,Black,16.801594445661454
+Tennessee,High school graduate,32.4,Asian,1.697691911805721
+Tennessee,High school graduate,32.4,Hispanic,5.2984105309671845
+Tennessee,"Some college, no degree",20.8,White,77.67496420510987
+Tennessee,"Some college, no degree",20.8,Black,16.801594445661454
+Tennessee,"Some college, no degree",20.8,Asian,1.697691911805721
+Tennessee,"Some college, no degree",20.8,Hispanic,5.2984105309671845
+Tennessee,Associate's degree,7.1,White,77.67496420510987
+Tennessee,Associate's degree,7.1,Black,16.801594445661454
+Tennessee,Associate's degree,7.1,Asian,1.697691911805721
+Tennessee,Associate's degree,7.1,Hispanic,5.2984105309671845
+Tennessee,Bachelor's degree,16.8,White,77.67496420510987
+Tennessee,Bachelor's degree,16.8,Black,16.801594445661454
+Tennessee,Bachelor's degree,16.8,Asian,1.697691911805721
+Tennessee,Bachelor's degree,16.8,Hispanic,5.2984105309671845
+Tennessee,Grad/pro degree,9.8,White,77.67496420510987
+Tennessee,Grad/pro degree,9.8,Black,16.801594445661454
+Tennessee,Grad/pro degree,9.8,Asian,1.697691911805721
+Tennessee,Grad/pro degree,9.8,Hispanic,5.2984105309671845
+Virginia,Less than 9th Grade,4.3,White,68.01537573982853
+Virginia,Less than 9th Grade,4.3,Black,19.174332469590937
+Virginia,Less than 9th Grade,4.3,Asian,6.31705819528787
+Virginia,Less than 9th Grade,4.3,Hispanic,9.165649089219654
+Virginia,"9th to 12th grade, no diploma",6.4,White,68.01537573982853
+Virginia,"9th to 12th grade, no diploma",6.4,Black,19.174332469590937
+Virginia,"9th to 12th grade, no diploma",6.4,Asian,6.31705819528787
+Virginia,"9th to 12th grade, no diploma",6.4,Hispanic,9.165649089219654
+Virginia,High school graduate,24.1,White,68.01537573982853
+Virginia,High school graduate,24.1,Black,19.174332469590937
+Virginia,High school graduate,24.1,Asian,6.31705819528787
+Virginia,High school graduate,24.1,Hispanic,9.165649089219654
+Virginia,"Some college, no degree",19.4,White,68.01537573982853
+Virginia,"Some college, no degree",19.4,Black,19.174332469590937
+Virginia,"Some college, no degree",19.4,Asian,6.31705819528787
+Virginia,"Some college, no degree",19.4,Hispanic,9.165649089219654
+Virginia,Associate's degree,7.6,White,68.01537573982853
+Virginia,Associate's degree,7.6,Black,19.174332469590937
+Virginia,Associate's degree,7.6,Asian,6.31705819528787
+Virginia,Associate's degree,7.6,Hispanic,9.165649089219654
+Virginia,Bachelor's degree,21.7,White,68.01537573982853
+Virginia,Bachelor's degree,21.7,Black,19.174332469590937
+Virginia,Bachelor's degree,21.7,Asian,6.31705819528787
+Virginia,Bachelor's degree,21.7,Hispanic,9.165649089219654
+Virginia,Grad/pro degree,16.4,White,68.01537573982853
+Virginia,Grad/pro degree,16.4,Black,19.174332469590937
+Virginia,Grad/pro degree,16.4,Asian,6.31705819528787
+Virginia,Grad/pro degree,16.4,Hispanic,9.165649089219654
+Delaware,Less than 9th Grade,3.5,White,68.97403356521097
+Delaware,Less than 9th Grade,3.5,Black,22.105645632678424
+Delaware,Less than 9th Grade,3.5,Asian,3.867634900657718
+Delaware,Less than 9th Grade,3.5,Hispanic,9.090621856881816
+Delaware,"9th to 12th grade, no diploma",6.8,White,68.97403356521097
+Delaware,"9th to 12th grade, no diploma",6.8,Black,22.105645632678424
+Delaware,"9th to 12th grade, no diploma",6.8,Asian,3.867634900657718
+Delaware,"9th to 12th grade, no diploma",6.8,Hispanic,9.090621856881816
+Delaware,High school graduate,31.6,White,68.97403356521097
+Delaware,High school graduate,31.6,Black,22.105645632678424
+Delaware,High school graduate,31.6,Asian,3.867634900657718
+Delaware,High school graduate,31.6,Hispanic,9.090621856881816
+Delaware,"Some college, no degree",19,White,68.97403356521097
+Delaware,"Some college, no degree",19,Black,22.105645632678424
+Delaware,"Some college, no degree",19,Asian,3.867634900657718
+Delaware,"Some college, no degree",19,Hispanic,9.090621856881816
+Delaware,Associate's degree,7.8,White,68.97403356521097
+Delaware,Associate's degree,7.8,Black,22.105645632678424
+Delaware,Associate's degree,7.8,Asian,3.867634900657718
+Delaware,Associate's degree,7.8,Hispanic,9.090621856881816
+Delaware,Bachelor's degree,18.3,White,68.97403356521097
+Delaware,Bachelor's degree,18.3,Black,22.105645632678424
+Delaware,Bachelor's degree,18.3,Asian,3.867634900657718
+Delaware,Bachelor's degree,18.3,Hispanic,9.090621856881816
+Delaware,Grad/pro degree,13.1,White,68.97403356521097
+Delaware,Grad/pro degree,13.1,Black,22.105645632678424
+Delaware,Grad/pro degree,13.1,Asian,3.867634900657718
+Delaware,Grad/pro degree,13.1,Hispanic,9.090621856881816
+West Virginia,Less than 9th Grade,4.4,White,93.1817759344448
+West Virginia,Less than 9th Grade,4.4,Black,3.6482247106974426
+West Virginia,Less than 9th Grade,4.4,Asian,0.7946184202325355
+West Virginia,Less than 9th Grade,4.4,Hispanic,1.5047122720269603
+West Virginia,"9th to 12th grade, no diploma",9,White,93.1817759344448
+West Virginia,"9th to 12th grade, no diploma",9,Black,3.6482247106974426
+West Virginia,"9th to 12th grade, no diploma",9,Asian,0.7946184202325355
+West Virginia,"9th to 12th grade, no diploma",9,Hispanic,1.5047122720269603
+West Virginia,High school graduate,40.5,White,93.1817759344448
+West Virginia,High school graduate,40.5,Black,3.6482247106974426
+West Virginia,High school graduate,40.5,Asian,0.7946184202325355
+West Virginia,High school graduate,40.5,Hispanic,1.5047122720269603
+West Virginia,"Some college, no degree",18.6,White,93.1817759344448
+West Virginia,"Some college, no degree",18.6,Black,3.6482247106974426
+West Virginia,"Some college, no degree",18.6,Asian,0.7946184202325355
+West Virginia,"Some college, no degree",18.6,Hispanic,1.5047122720269603
+West Virginia,Associate's degree,7.1,White,93.1817759344448
+West Virginia,Associate's degree,7.1,Black,3.6482247106974426
+West Virginia,Associate's degree,7.1,Asian,0.7946184202325355
+West Virginia,Associate's degree,7.1,Hispanic,1.5047122720269603
+West Virginia,Bachelor's degree,12.2,White,93.1817759344448
+West Virginia,Bachelor's degree,12.2,Black,3.6482247106974426
+West Virginia,Bachelor's degree,12.2,Asian,0.7946184202325355
+West Virginia,Bachelor's degree,12.2,Hispanic,1.5047122720269603
+West Virginia,Grad/pro degree,8,White,93.1817759344448
+West Virginia,Grad/pro degree,8,Black,3.6482247106974426
+West Virginia,Grad/pro degree,8,Asian,0.7946184202325355
+West Virginia,Grad/pro degree,8,Hispanic,1.5047122720269603
+Wisconsin,Less than 9th Grade,2.8,White,85.59412874926839
+Wisconsin,Less than 9th Grade,2.8,Black,6.381427088564746
+Wisconsin,Less than 9th Grade,2.8,Asian,2.757790486422352
+Wisconsin,Less than 9th Grade,2.8,Hispanic,6.6762321849288915
+Wisconsin,"9th to 12th grade, no diploma",5.3,White,85.59412874926839
+Wisconsin,"9th to 12th grade, no diploma",5.3,Black,6.381427088564746
+Wisconsin,"9th to 12th grade, no diploma",5.3,Asian,2.757790486422352
+Wisconsin,"9th to 12th grade, no diploma",5.3,Hispanic,6.6762321849288915
+Wisconsin,High school graduate,30.9,White,85.59412874926839
+Wisconsin,High school graduate,30.9,Black,6.381427088564746
+Wisconsin,High school graduate,30.9,Asian,2.757790486422352
+Wisconsin,High school graduate,30.9,Hispanic,6.6762321849288915
+Wisconsin,"Some college, no degree",20.7,White,85.59412874926839
+Wisconsin,"Some college, no degree",20.7,Black,6.381427088564746
+Wisconsin,"Some college, no degree",20.7,Asian,2.757790486422352
+Wisconsin,"Some college, no degree",20.7,Hispanic,6.6762321849288915
+Wisconsin,Associate's degree,10.7,White,85.59412874926839
+Wisconsin,Associate's degree,10.7,Black,6.381427088564746
+Wisconsin,Associate's degree,10.7,Asian,2.757790486422352
+Wisconsin,Associate's degree,10.7,Hispanic,6.6762321849288915
+Wisconsin,Bachelor's degree,19.4,White,85.59412874926839
+Wisconsin,Bachelor's degree,19.4,Black,6.381427088564746
+Wisconsin,Bachelor's degree,19.4,Asian,2.757790486422352
+Wisconsin,Bachelor's degree,19.4,Hispanic,6.6762321849288915
+Wisconsin,Grad/pro degree,10.1,White,85.59412874926839
+Wisconsin,Grad/pro degree,10.1,Black,6.381427088564746
+Wisconsin,Grad/pro degree,10.1,Asian,2.757790486422352
+Wisconsin,Grad/pro degree,10.1,Hispanic,6.6762321849288915
+Wyoming,Less than 9th Grade,1.9,White,91.43607477021017
+Wyoming,Less than 9th Grade,1.9,Black,0.9521583401508329
+Wyoming,Less than 9th Grade,1.9,Asian,0.8174124667432061
+Wyoming,Less than 9th Grade,1.9,Hispanic,9.790731408850604
+Wyoming,"9th to 12th grade, no diploma",5.2,White,91.43607477021017
+Wyoming,"9th to 12th grade, no diploma",5.2,Black,0.9521583401508329
+Wyoming,"9th to 12th grade, no diploma",5.2,Asian,0.8174124667432061
+Wyoming,"9th to 12th grade, no diploma",5.2,Hispanic,9.790731408850604
+Wyoming,High school graduate,28.7,White,91.43607477021017
+Wyoming,High school graduate,28.7,Black,0.9521583401508329
+Wyoming,High school graduate,28.7,Asian,0.8174124667432061
+Wyoming,High school graduate,28.7,Hispanic,9.790731408850604
+Wyoming,"Some college, no degree",26.3,White,91.43607477021017
+Wyoming,"Some college, no degree",26.3,Black,0.9521583401508329
+Wyoming,"Some college, no degree",26.3,Asian,0.8174124667432061
+Wyoming,"Some college, no degree",26.3,Hispanic,9.790731408850604
+Wyoming,Associate's degree,11,White,91.43607477021017
+Wyoming,Associate's degree,11,Black,0.9521583401508329
+Wyoming,Associate's degree,11,Asian,0.8174124667432061
+Wyoming,Associate's degree,11,Hispanic,9.790731408850604
+Wyoming,Bachelor's degree,17.4,White,91.43607477021017
+Wyoming,Bachelor's degree,17.4,Black,0.9521583401508329
+Wyoming,Bachelor's degree,17.4,Asian,0.8174124667432061
+Wyoming,Bachelor's degree,17.4,Hispanic,9.790731408850604
+Wyoming,Grad/pro degree,9.5,White,91.43607477021017
+Wyoming,Grad/pro degree,9.5,Black,0.9521583401508329
+Wyoming,Grad/pro degree,9.5,Asian,0.8174124667432061
+Wyoming,Grad/pro degree,9.5,Hispanic,9.790731408850604
+Alabama,Less than 9th Grade,4.5,White,68.19468084231646
+Alabama,Less than 9th Grade,4.5,Black,26.583166827006092
+Alabama,Less than 9th Grade,4.5,Asian,1.3281243576144783
+Alabama,Less than 9th Grade,4.5,Hispanic,4.175937574516721
+Alabama,"9th to 12th grade, no diploma",9.7,White,68.19468084231646
+Alabama,"9th to 12th grade, no diploma",9.7,Black,26.583166827006092
+Alabama,"9th to 12th grade, no diploma",9.7,Asian,1.3281243576144783
+Alabama,"9th to 12th grade, no diploma",9.7,Hispanic,4.175937574516721
+Alabama,High school graduate,30.9,White,68.19468084231646
+Alabama,High school graduate,30.9,Black,26.583166827006092
+Alabama,High school graduate,30.9,Asian,1.3281243576144783
+Alabama,High school graduate,30.9,Hispanic,4.175937574516721
+Alabama,"Some college, no degree",21.6,White,68.19468084231646
+Alabama,"Some college, no degree",21.6,Black,26.583166827006092
+Alabama,"Some college, no degree",21.6,Asian,1.3281243576144783
+Alabama,"Some college, no degree",21.6,Hispanic,4.175937574516721
+Alabama,Associate's degree,8.3,White,68.19468084231646
+Alabama,Associate's degree,8.3,Black,26.583166827006092
+Alabama,Associate's degree,8.3,Asian,1.3281243576144783
+Alabama,Associate's degree,8.3,Hispanic,4.175937574516721
+Alabama,Bachelor's degree,15.6,White,68.19468084231646
+Alabama,Bachelor's degree,15.6,Black,26.583166827006092
+Alabama,Bachelor's degree,15.6,Asian,1.3281243576144783
+Alabama,Bachelor's degree,15.6,Hispanic,4.175937574516721
+Alabama,Grad/pro degree,9.3,White,68.19468084231646
+Alabama,Grad/pro degree,9.3,Black,26.583166827006092
+Alabama,Grad/pro degree,9.3,Asian,1.3281243576144783
+Alabama,Grad/pro degree,9.3,Hispanic,4.175937574516721
+Florida,Less than 9th Grade,4.9,White,75.3907816623628
+Florida,Less than 9th Grade,4.9,Black,16.10036712539905
+Florida,Less than 9th Grade,4.9,Asian,2.7146530082159366
+Florida,Less than 9th Grade,4.9,Hispanic,25.17081761609629
+Florida,"9th to 12th grade, no diploma",7.1,White,75.3907816623628
+Florida,"9th to 12th grade, no diploma",7.1,Black,16.10036712539905
+Florida,"9th to 12th grade, no diploma",7.1,Asian,2.7146530082159366
+Florida,"9th to 12th grade, no diploma",7.1,Hispanic,25.17081761609629
+Florida,High school graduate,28.8,White,75.3907816623628
+Florida,High school graduate,28.8,Black,16.10036712539905
+Florida,High school graduate,28.8,Asian,2.7146530082159366
+Florida,High school graduate,28.8,Hispanic,25.17081761609629
+Florida,"Some college, no degree",20.2,White,75.3907816623628
+Florida,"Some college, no degree",20.2,Black,16.10036712539905
+Florida,"Some college, no degree",20.2,Asian,2.7146530082159366
+Florida,"Some college, no degree",20.2,Hispanic,25.17081761609629
+Florida,Associate's degree,9.8,White,75.3907816623628
+Florida,Associate's degree,9.8,Black,16.10036712539905
+Florida,Associate's degree,9.8,Asian,2.7146530082159366
+Florida,Associate's degree,9.8,Hispanic,25.17081761609629
+Florida,Bachelor's degree,18.5,White,75.3907816623628
+Florida,Bachelor's degree,18.5,Black,16.10036712539905
+Florida,Bachelor's degree,18.5,Asian,2.7146530082159366
+Florida,Bachelor's degree,18.5,Hispanic,25.17081761609629
+Florida,Grad/pro degree,10.6,White,75.3907816623628
+Florida,Grad/pro degree,10.6,Black,16.10036712539905
+Florida,Grad/pro degree,10.6,Asian,2.7146530082159366
+Florida,Grad/pro degree,10.6,Hispanic,25.17081761609629
+Idaho,Less than 9th Grade,3.5,White,90.48784548488604
+Idaho,Less than 9th Grade,3.5,Black,0.683489660263691
+Idaho,Less than 9th Grade,3.5,Asian,1.4076237299362666
+Idaho,Less than 9th Grade,3.5,Hispanic,12.387242869305709
+Idaho,"9th to 12th grade, no diploma",5.9,White,90.48784548488604
+Idaho,"9th to 12th grade, no diploma",5.9,Black,0.683489660263691
+Idaho,"9th to 12th grade, no diploma",5.9,Asian,1.4076237299362666
+Idaho,"9th to 12th grade, no diploma",5.9,Hispanic,12.387242869305709
+Idaho,High school graduate,27.7,White,90.48784548488604
+Idaho,High school graduate,27.7,Black,0.683489660263691
+Idaho,High school graduate,27.7,Asian,1.4076237299362666
+Idaho,High school graduate,27.7,Hispanic,12.387242869305709
+Idaho,"Some college, no degree",26.4,White,90.48784548488604
+Idaho,"Some college, no degree",26.4,Black,0.683489660263691
+Idaho,"Some college, no degree",26.4,Asian,1.4076237299362666
+Idaho,"Some college, no degree",26.4,Hispanic,12.387242869305709
+Idaho,Associate's degree,9.6,White,90.48784548488604
+Idaho,Associate's degree,9.6,Black,0.683489660263691
+Idaho,Associate's degree,9.6,Asian,1.4076237299362666
+Idaho,Associate's degree,9.6,Hispanic,12.387242869305709
+Idaho,Bachelor's degree,18.2,White,90.48784548488604
+Idaho,Bachelor's degree,18.2,Black,0.683489660263691
+Idaho,Bachelor's degree,18.2,Asian,1.4076237299362666
+Idaho,Bachelor's degree,18.2,Hispanic,12.387242869305709
+Idaho,Grad/pro degree,8.7,White,90.48784548488604
+Idaho,Grad/pro degree,8.7,Black,0.683489660263691
+Idaho,Grad/pro degree,8.7,Asian,1.4076237299362666
+Idaho,Grad/pro degree,8.7,Hispanic,12.387242869305709
+Kansas,Less than 9th Grade,3.7,White,84.59293531024733
+Kansas,Less than 9th Grade,3.7,Black,5.837541288844517
+Kansas,Less than 9th Grade,3.7,Asian,2.8716889853326624
+Kansas,Less than 9th Grade,3.7,Hispanic,11.70994260128659
+Kansas,"9th to 12th grade, no diploma",5.6,White,84.59293531024733
+Kansas,"9th to 12th grade, no diploma",5.6,Black,5.837541288844517
+Kansas,"9th to 12th grade, no diploma",5.6,Asian,2.8716889853326624
+Kansas,"9th to 12th grade, no diploma",5.6,Hispanic,11.70994260128659
+Kansas,High school graduate,26,White,84.59293531024733
+Kansas,High school graduate,26,Black,5.837541288844517
+Kansas,High school graduate,26,Asian,2.8716889853326624
+Kansas,High school graduate,26,Hispanic,11.70994260128659
+Kansas,"Some college, no degree",23.3,White,84.59293531024733
+Kansas,"Some college, no degree",23.3,Black,5.837541288844517
+Kansas,"Some college, no degree",23.3,Asian,2.8716889853326624
+Kansas,"Some college, no degree",23.3,Hispanic,11.70994260128659
+Kansas,Associate's degree,8.5,White,84.59293531024733
+Kansas,Associate's degree,8.5,Black,5.837541288844517
+Kansas,Associate's degree,8.5,Asian,2.8716889853326624
+Kansas,Associate's degree,8.5,Hispanic,11.70994260128659
+Kansas,Bachelor's degree,20.8,White,84.59293531024733
+Kansas,Bachelor's degree,20.8,Black,5.837541288844517
+Kansas,Bachelor's degree,20.8,Asian,2.8716889853326624
+Kansas,Bachelor's degree,20.8,Hispanic,11.70994260128659
+Kansas,Grad/pro degree,12.1,White,84.59293531024733
+Kansas,Grad/pro degree,12.1,Black,5.837541288844517
+Kansas,Grad/pro degree,12.1,Asian,2.8716889853326624
+Kansas,Grad/pro degree,12.1,Hispanic,11.70994260128659
+Maryland,Less than 9th Grade,4,White,56.18751598043453
+Maryland,Less than 9th Grade,4,Black,29.784448403289115
+Maryland,Less than 9th Grade,4,Asian,6.234380816982277
+Maryland,Less than 9th Grade,4,Hispanic,9.80958401315247
+Maryland,"9th to 12th grade, no diploma",6,White,56.18751598043453
+Maryland,"9th to 12th grade, no diploma",6,Black,29.784448403289115
+Maryland,"9th to 12th grade, no diploma",6,Asian,6.234380816982277
+Maryland,"9th to 12th grade, no diploma",6,Hispanic,9.80958401315247
+Maryland,High school graduate,24.8,White,56.18751598043453
+Maryland,High school graduate,24.8,Black,29.784448403289115
+Maryland,High school graduate,24.8,Asian,6.234380816982277
+Maryland,High school graduate,24.8,Hispanic,9.80958401315247
+Maryland,"Some college, no degree",18.9,White,56.18751598043453
+Maryland,"Some college, no degree",18.9,Black,29.784448403289115
+Maryland,"Some college, no degree",18.9,Asian,6.234380816982277
+Maryland,"Some college, no degree",18.9,Hispanic,9.80958401315247
+Maryland,Associate's degree,6.6,White,56.18751598043453
+Maryland,Associate's degree,6.6,Black,29.784448403289115
+Maryland,Associate's degree,6.6,Asian,6.234380816982277
+Maryland,Associate's degree,6.6,Hispanic,9.80958401315247
+Maryland,Bachelor's degree,21.3,White,56.18751598043453
+Maryland,Bachelor's degree,21.3,Black,29.784448403289115
+Maryland,Bachelor's degree,21.3,Asian,6.234380816982277
+Maryland,Bachelor's degree,21.3,Hispanic,9.80958401315247
+Maryland,Grad/pro degree,18.3,White,56.18751598043453
+Maryland,Grad/pro degree,18.3,Black,29.784448403289115
+Maryland,Grad/pro degree,18.3,Asian,6.234380816982277
+Maryland,Grad/pro degree,18.3,Hispanic,9.80958401315247
+New Jersey,Less than 9th Grade,4.9,White,67.9109689484561
+New Jersey,Less than 9th Grade,4.9,Black,13.474272518829139
+New Jersey,Less than 9th Grade,4.9,Asian,9.371960442903474
+New Jersey,Less than 9th Grade,4.9,Hispanic,19.905999260288826
+New Jersey,"9th to 12th grade, no diploma",5.5,White,67.9109689484561
+New Jersey,"9th to 12th grade, no diploma",5.5,Black,13.474272518829139
+New Jersey,"9th to 12th grade, no diploma",5.5,Asian,9.371960442903474
+New Jersey,"9th to 12th grade, no diploma",5.5,Hispanic,19.905999260288826
+New Jersey,High school graduate,27.5,White,67.9109689484561
+New Jersey,High school graduate,27.5,Black,13.474272518829139
+New Jersey,High school graduate,27.5,Asian,9.371960442903474
+New Jersey,High school graduate,27.5,Hispanic,19.905999260288826
+New Jersey,"Some college, no degree",16.6,White,67.9109689484561
+New Jersey,"Some college, no degree",16.6,Black,13.474272518829139
+New Jersey,"Some college, no degree",16.6,Asian,9.371960442903474
+New Jersey,"Some college, no degree",16.6,Hispanic,19.905999260288826
+New Jersey,Associate's degree,6.5,White,67.9109689484561
+New Jersey,Associate's degree,6.5,Black,13.474272518829139
+New Jersey,Associate's degree,6.5,Asian,9.371960442903474
+New Jersey,Associate's degree,6.5,Hispanic,19.905999260288826
+New Jersey,Bachelor's degree,23.8,White,67.9109689484561
+New Jersey,Bachelor's degree,23.8,Black,13.474272518829139
+New Jersey,Bachelor's degree,23.8,Asian,9.371960442903474
+New Jersey,Bachelor's degree,23.8,Hispanic,19.905999260288826
+New Jersey,Grad/pro degree,15.1,White,67.9109689484561
+New Jersey,Grad/pro degree,15.1,Black,13.474272518829139
+New Jersey,Grad/pro degree,15.1,Asian,9.371960442903474
+New Jersey,Grad/pro degree,15.1,Hispanic,19.905999260288826
+North Carolina,Less than 9th Grade,4.7,White,68.87060804929366
+North Carolina,Less than 9th Grade,4.7,Black,21.46221640344306
+North Carolina,Less than 9th Grade,4.7,Asian,2.779386082036909
+North Carolina,Less than 9th Grade,4.7,Hispanic,9.216075742859326
+North Carolina,"9th to 12th grade, no diploma",7.9,White,68.87060804929366
+North Carolina,"9th to 12th grade, no diploma",7.9,Black,21.46221640344306
+North Carolina,"9th to 12th grade, no diploma",7.9,Asian,2.779386082036909
+North Carolina,"9th to 12th grade, no diploma",7.9,Hispanic,9.216075742859326
+North Carolina,High school graduate,25.9,White,68.87060804929366
+North Carolina,High school graduate,25.9,Black,21.46221640344306
+North Carolina,High school graduate,25.9,Asian,2.779386082036909
+North Carolina,High school graduate,25.9,Hispanic,9.216075742859326
+North Carolina,"Some college, no degree",21.5,White,68.87060804929366
+North Carolina,"Some college, no degree",21.5,Black,21.46221640344306
+North Carolina,"Some college, no degree",21.5,Asian,2.779386082036909
+North Carolina,"Some college, no degree",21.5,Hispanic,9.216075742859326
+North Carolina,Associate's degree,9.5,White,68.87060804929366
+North Carolina,Associate's degree,9.5,Black,21.46221640344306
+North Carolina,Associate's degree,9.5,Asian,2.779386082036909
+North Carolina,Associate's degree,9.5,Hispanic,9.216075742859326
+North Carolina,Bachelor's degree,19.6,White,68.87060804929366
+North Carolina,Bachelor's degree,19.6,Black,21.46221640344306
+North Carolina,Bachelor's degree,19.6,Asian,2.779386082036909
+North Carolina,Bachelor's degree,19.6,Hispanic,9.216075742859326
+North Carolina,Grad/pro degree,10.9,White,68.87060804929366
+North Carolina,Grad/pro degree,10.9,Black,21.46221640344306
+North Carolina,Grad/pro degree,10.9,Asian,2.779386082036909
+North Carolina,Grad/pro degree,10.9,Hispanic,9.216075742859326
+South Carolina,Less than 9th Grade,4.2,White,67.25255123917331
+South Carolina,Less than 9th Grade,4.2,Black,27.025429158028018
+South Carolina,Less than 9th Grade,4.2,Asian,1.515035033823151
+South Carolina,Less than 9th Grade,4.2,Hispanic,5.562735513551961
+South Carolina,"9th to 12th grade, no diploma",8.7,White,67.25255123917331
+South Carolina,"9th to 12th grade, no diploma",8.7,Black,27.025429158028018
+South Carolina,"9th to 12th grade, no diploma",8.7,Asian,1.515035033823151
+South Carolina,"9th to 12th grade, no diploma",8.7,Hispanic,5.562735513551961
+South Carolina,High school graduate,29.5,White,67.25255123917331
+South Carolina,High school graduate,29.5,Black,27.025429158028018
+South Carolina,High school graduate,29.5,Asian,1.515035033823151
+South Carolina,High school graduate,29.5,Hispanic,5.562735513551961
+South Carolina,"Some college, no degree",20.6,White,67.25255123917331
+South Carolina,"Some college, no degree",20.6,Black,27.025429158028018
+South Carolina,"Some college, no degree",20.6,Asian,1.515035033823151
+South Carolina,"Some college, no degree",20.6,Hispanic,5.562735513551961
+South Carolina,Associate's degree,9.6,White,67.25255123917331
+South Carolina,Associate's degree,9.6,Black,27.025429158028018
+South Carolina,Associate's degree,9.6,Asian,1.515035033823151
+South Carolina,Associate's degree,9.6,Hispanic,5.562735513551961
+South Carolina,Bachelor's degree,17.4,White,67.25255123917331
+South Carolina,Bachelor's degree,17.4,Black,27.025429158028018
+South Carolina,Bachelor's degree,17.4,Asian,1.515035033823151
+South Carolina,Bachelor's degree,17.4,Hispanic,5.562735513551961
+South Carolina,Grad/pro degree,10,White,67.25255123917331
+South Carolina,Grad/pro degree,10,Black,27.025429158028018
+South Carolina,Grad/pro degree,10,Asian,1.515035033823151
+South Carolina,Grad/pro degree,10,Hispanic,5.562735513551961
+Washington,Less than 9th Grade,3.7,White,76.03155379735729
+Washington,Less than 9th Grade,3.7,Black,3.699500543983716
+Washington,Less than 9th Grade,3.7,Asian,8.327406360222508
+Washington,Less than 9th Grade,3.7,Hispanic,12.496997670521347
+Washington,"9th to 12th grade, no diploma",5.1,White,76.03155379735729
+Washington,"9th to 12th grade, no diploma",5.1,Black,3.699500543983716
+Washington,"9th to 12th grade, no diploma",5.1,Asian,8.327406360222508
+Washington,"9th to 12th grade, no diploma",5.1,Hispanic,12.496997670521347
+Washington,High school graduate,22.2,White,76.03155379735729
+Washington,High school graduate,22.2,Black,3.699500543983716
+Washington,High school graduate,22.2,Asian,8.327406360222508
+Washington,High school graduate,22.2,Hispanic,12.496997670521347
+Washington,"Some college, no degree",23.7,White,76.03155379735729
+Washington,"Some college, no degree",23.7,Black,3.699500543983716
+Washington,"Some college, no degree",23.7,Asian,8.327406360222508
+Washington,"Some college, no degree",23.7,Hispanic,12.496997670521347
+Washington,Associate's degree,10,White,76.03155379735729
+Washington,Associate's degree,10,Black,3.699500543983716
+Washington,Associate's degree,10,Asian,8.327406360222508
+Washington,Associate's degree,10,Hispanic,12.496997670521347
+Washington,Bachelor's degree,22.1,White,76.03155379735729
+Washington,Bachelor's degree,22.1,Black,3.699500543983716
+Washington,Bachelor's degree,22.1,Asian,8.327406360222508
+Washington,Bachelor's degree,22.1,Hispanic,12.496997670521347
+Washington,Grad/pro degree,13.2,White,76.03155379735729
+Washington,Grad/pro degree,13.2,Black,3.699500543983716
+Washington,Grad/pro degree,13.2,Asian,8.327406360222508
+Washington,Grad/pro degree,13.2,Hispanic,12.496997670521347
+Vermont,Less than 9th Grade,2.3,White,94.33083137459458
+Vermont,Less than 9th Grade,2.3,Black,1.2893274472500589
+Vermont,Less than 9th Grade,2.3,Asian,1.692702291444325
+Vermont,Less than 9th Grade,2.3,Hispanic,1.868388756706247
+Vermont,"9th to 12th grade, no diploma",5.1,White,94.33083137459458
+Vermont,"9th to 12th grade, no diploma",5.1,Black,1.2893274472500589
+Vermont,"9th to 12th grade, no diploma",5.1,Asian,1.692702291444325
+Vermont,"9th to 12th grade, no diploma",5.1,Hispanic,1.868388756706247
+Vermont,High school graduate,29.2,White,94.33083137459458
+Vermont,High school graduate,29.2,Black,1.2893274472500589
+Vermont,High school graduate,29.2,Asian,1.692702291444325
+Vermont,High school graduate,29.2,Hispanic,1.868388756706247
+Vermont,"Some college, no degree",17.6,White,94.33083137459458
+Vermont,"Some college, no degree",17.6,Black,1.2893274472500589
+Vermont,"Some college, no degree",17.6,Asian,1.692702291444325
+Vermont,"Some college, no degree",17.6,Hispanic,1.868388756706247
+Vermont,Associate's degree,8.5,White,94.33083137459458
+Vermont,Associate's degree,8.5,Black,1.2893274472500589
+Vermont,Associate's degree,8.5,Asian,1.692702291444325
+Vermont,Associate's degree,8.5,Hispanic,1.868388756706247
+Vermont,Bachelor's degree,22.1,White,94.33083137459458
+Vermont,Bachelor's degree,22.1,Black,1.2893274472500589
+Vermont,Bachelor's degree,22.1,Asian,1.692702291444325
+Vermont,Bachelor's degree,22.1,Hispanic,1.868388756706247
+Vermont,Grad/pro degree,15.3,White,94.33083137459458
+Vermont,Grad/pro degree,15.3,Black,1.2893274472500589
+Vermont,Grad/pro degree,15.3,Asian,1.692702291444325
+Vermont,Grad/pro degree,15.3,Hispanic,1.868388756706247
+Utah,Less than 9th Grade,2.8,White,86.42868635788989
+Utah,Less than 9th Grade,2.8,Black,1.1775986339829576
+Utah,Less than 9th Grade,2.8,Asian,2.2923473492373616
+Utah,Less than 9th Grade,2.8,Hispanic,13.861231057185543
+Utah,"9th to 12th grade, no diploma",5.3,White,86.42868635788989
+Utah,"9th to 12th grade, no diploma",5.3,Black,1.1775986339829576
+Utah,"9th to 12th grade, no diploma",5.3,Asian,2.2923473492373616
+Utah,"9th to 12th grade, no diploma",5.3,Hispanic,13.861231057185543
+Utah,High school graduate,22.9,White,86.42868635788989
+Utah,High school graduate,22.9,Black,1.1775986339829576
+Utah,High school graduate,22.9,Asian,2.2923473492373616
+Utah,High school graduate,22.9,Hispanic,13.861231057185543
+Utah,"Some college, no degree",26.1,White,86.42868635788989
+Utah,"Some college, no degree",26.1,Black,1.1775986339829576
+Utah,"Some college, no degree",26.1,Asian,2.2923473492373616
+Utah,"Some college, no degree",26.1,Hispanic,13.861231057185543
+Utah,Associate's degree,9.8,White,86.42868635788989
+Utah,Associate's degree,9.8,Black,1.1775986339829576
+Utah,Associate's degree,9.8,Asian,2.2923473492373616
+Utah,Associate's degree,9.8,Hispanic,13.861231057185543
+Utah,Bachelor's degree,22,White,86.42868635788989
+Utah,Bachelor's degree,22,Black,1.1775986339829576
+Utah,Bachelor's degree,22,Asian,2.2923473492373616
+Utah,Bachelor's degree,22,Hispanic,13.861231057185543
+Utah,Grad/pro degree,11.3,White,86.42868635788989
+Utah,Grad/pro degree,11.3,Black,1.1775986339829576
+Utah,Grad/pro degree,11.3,Asian,2.2923473492373616
+Utah,Grad/pro degree,11.3,Hispanic,13.861231057185543
+Iowa,Less than 9th Grade,3.1,White,90.27581493242296
+Iowa,Less than 9th Grade,3.1,Black,3.5087321655968604
+Iowa,Less than 9th Grade,3.1,Asian,2.396904196936695
+Iowa,Less than 9th Grade,3.1,Hispanic,5.851430439403173
+Iowa,"9th to 12th grade, no diploma",4.9,White,90.27581493242296
+Iowa,"9th to 12th grade, no diploma",4.9,Black,3.5087321655968604
+Iowa,"9th to 12th grade, no diploma",4.9,Asian,2.396904196936695
+Iowa,"9th to 12th grade, no diploma",4.9,Hispanic,5.851430439403173
+Iowa,High school graduate,31.1,White,90.27581493242296
+Iowa,High school graduate,31.1,Black,3.5087321655968604
+Iowa,High school graduate,31.1,Asian,2.396904196936695
+Iowa,High school graduate,31.1,Hispanic,5.851430439403173
+Iowa,"Some college, no degree",21.2,White,90.27581493242296
+Iowa,"Some college, no degree",21.2,Black,3.5087321655968604
+Iowa,"Some college, no degree",21.2,Asian,2.396904196936695
+Iowa,"Some college, no degree",21.2,Hispanic,5.851430439403173
+Iowa,Associate's degree,11.5,White,90.27581493242296
+Iowa,Associate's degree,11.5,Black,3.5087321655968604
+Iowa,Associate's degree,11.5,Asian,2.396904196936695
+Iowa,Associate's degree,11.5,Hispanic,5.851430439403173
+Iowa,Bachelor's degree,19,White,90.27581493242296
+Iowa,Bachelor's degree,19,Black,3.5087321655968604
+Iowa,Bachelor's degree,19,Asian,2.396904196936695
+Iowa,Bachelor's degree,19,Hispanic,5.851430439403173
+Iowa,Grad/pro degree,9.2,White,90.27581493242296
+Iowa,Grad/pro degree,9.2,Black,3.5087321655968604
+Iowa,Grad/pro degree,9.2,Asian,2.396904196936695
+Iowa,Grad/pro degree,9.2,Hispanic,5.851430439403173
+Kentucky,Less than 9th Grade,5.8,White,87.08329617287855
+Kentucky,Less than 9th Grade,5.8,Black,7.975129070646305
+Kentucky,Less than 9th Grade,5.8,Asian,1.4143944737674214
+Kentucky,Less than 9th Grade,5.8,Hispanic,3.575151051618349
+Kentucky,"9th to 12th grade, no diploma",8.5,White,87.08329617287855
+Kentucky,"9th to 12th grade, no diploma",8.5,Black,7.975129070646305
+Kentucky,"9th to 12th grade, no diploma",8.5,Asian,1.4143944737674214
+Kentucky,"9th to 12th grade, no diploma",8.5,Hispanic,3.575151051618349
+Kentucky,High school graduate,33,White,87.08329617287855
+Kentucky,High school graduate,33,Black,7.975129070646305
+Kentucky,High school graduate,33,Asian,1.4143944737674214
+Kentucky,High school graduate,33,Hispanic,3.575151051618349
+Kentucky,"Some college, no degree",20.9,White,87.08329617287855
+Kentucky,"Some college, no degree",20.9,Black,7.975129070646305
+Kentucky,"Some college, no degree",20.9,Asian,1.4143944737674214
+Kentucky,"Some college, no degree",20.9,Hispanic,3.575151051618349
+Kentucky,Associate's degree,8.1,White,87.08329617287855
+Kentucky,Associate's degree,8.1,Black,7.975129070646305
+Kentucky,Associate's degree,8.1,Asian,1.4143944737674214
+Kentucky,Associate's degree,8.1,Hispanic,3.575151051618349
+Kentucky,Bachelor's degree,13.8,White,87.08329617287855
+Kentucky,Bachelor's degree,13.8,Black,7.975129070646305
+Kentucky,Bachelor's degree,13.8,Asian,1.4143944737674214
+Kentucky,Bachelor's degree,13.8,Hispanic,3.575151051618349
+Kentucky,Grad/pro degree,9.8,White,87.08329617287855
+Kentucky,Grad/pro degree,9.8,Black,7.975129070646305
+Kentucky,Grad/pro degree,9.8,Asian,1.4143944737674214
+Kentucky,Grad/pro degree,9.8,Hispanic,3.575151051618349
+Maine,Less than 9th Grade,2.7,White,94.47814509612377
+Maine,Less than 9th Grade,2.7,Black,1.3415985588375863
+Maine,Less than 9th Grade,2.7,Asian,1.119211772394177
+Maine,Less than 9th Grade,2.7,Hispanic,1.607202210662711
+Maine,"9th to 12th grade, no diploma",5,White,94.47814509612377
+Maine,"9th to 12th grade, no diploma",5,Black,1.3415985588375863
+Maine,"9th to 12th grade, no diploma",5,Asian,1.119211772394177
+Maine,"9th to 12th grade, no diploma",5,Hispanic,1.607202210662711
+Maine,High school graduate,31.8,White,94.47814509612377
+Maine,High school graduate,31.8,Black,1.3415985588375863
+Maine,High school graduate,31.8,Asian,1.119211772394177
+Maine,High school graduate,31.8,Hispanic,1.607202210662711
+Maine,"Some college, no degree",19.6,White,94.47814509612377
+Maine,"Some college, no degree",19.6,Black,1.3415985588375863
+Maine,"Some college, no degree",19.6,Asian,1.119211772394177
+Maine,"Some college, no degree",19.6,Hispanic,1.607202210662711
+Maine,Associate's degree,10,White,94.47814509612377
+Maine,Associate's degree,10,Black,1.3415985588375863
+Maine,Associate's degree,10,Asian,1.119211772394177
+Maine,Associate's degree,10,Hispanic,1.607202210662711
+Maine,Bachelor's degree,19.6,White,94.47814509612377
+Maine,Bachelor's degree,19.6,Black,1.3415985588375863
+Maine,Bachelor's degree,19.6,Asian,1.119211772394177
+Maine,Bachelor's degree,19.6,Hispanic,1.607202210662711
+Maine,Grad/pro degree,11.3,White,94.47814509612377
+Maine,Grad/pro degree,11.3,Black,1.3415985588375863
+Maine,Grad/pro degree,11.3,Asian,1.119211772394177
+Maine,Grad/pro degree,11.3,Hispanic,1.607202210662711
+Massachusetts,Less than 9th Grade,4.5,White,78.47517632371442
+Massachusetts,Less than 9th Grade,4.5,Black,7.475015713318789
+Massachusetts,Less than 9th Grade,4.5,Asian,6.479670486617289
+Massachusetts,Less than 9th Grade,4.5,Hispanic,11.553509542116892
+Massachusetts,"9th to 12th grade, no diploma",5.1,White,78.47517632371442
+Massachusetts,"9th to 12th grade, no diploma",5.1,Black,7.475015713318789
+Massachusetts,"9th to 12th grade, no diploma",5.1,Asian,6.479670486617289
+Massachusetts,"9th to 12th grade, no diploma",5.1,Hispanic,11.553509542116892
+Massachusetts,High school graduate,24.2,White,78.47517632371442
+Massachusetts,High school graduate,24.2,Black,7.475015713318789
+Massachusetts,High school graduate,24.2,Asian,6.479670486617289
+Massachusetts,High school graduate,24.2,Hispanic,11.553509542116892
+Massachusetts,"Some college, no degree",15.6,White,78.47517632371442
+Massachusetts,"Some college, no degree",15.6,Black,7.475015713318789
+Massachusetts,"Some college, no degree",15.6,Asian,6.479670486617289
+Massachusetts,"Some college, no degree",15.6,Hispanic,11.553509542116892
+Massachusetts,Associate's degree,7.7,White,78.47517632371442
+Massachusetts,Associate's degree,7.7,Black,7.475015713318789
+Massachusetts,Associate's degree,7.7,Asian,6.479670486617289
+Massachusetts,Associate's degree,7.7,Hispanic,11.553509542116892
+Massachusetts,Bachelor's degree,23.8,White,78.47517632371442
+Massachusetts,Bachelor's degree,23.8,Black,7.475015713318789
+Massachusetts,Bachelor's degree,23.8,Asian,6.479670486617289
+Massachusetts,Bachelor's degree,23.8,Hispanic,11.553509542116892
+Massachusetts,Grad/pro degree,19.1,White,78.47517632371442
+Massachusetts,Grad/pro degree,19.1,Black,7.475015713318789
+Massachusetts,Grad/pro degree,19.1,Asian,6.479670486617289
+Massachusetts,Grad/pro degree,19.1,Hispanic,11.553509542116892
+Michigan,Less than 9th Grade,3,White,78.51968287584178
+Michigan,Less than 9th Grade,3,Black,13.812961662620129
+Michigan,Less than 9th Grade,3,Asian,3.0570260290547173
+Michigan,Less than 9th Grade,3,Hispanic,5.000226964873068
+Michigan,"9th to 12th grade, no diploma",6.5,White,78.51968287584178
+Michigan,"9th to 12th grade, no diploma",6.5,Black,13.812961662620129
+Michigan,"9th to 12th grade, no diploma",6.5,Asian,3.0570260290547173
+Michigan,"9th to 12th grade, no diploma",6.5,Hispanic,5.000226964873068
+Michigan,High school graduate,29,White,78.51968287584178
+Michigan,High school graduate,29,Black,13.812961662620129
+Michigan,High school graduate,29,Asian,3.0570260290547173
+Michigan,High school graduate,29,Hispanic,5.000226964873068
+Michigan,"Some college, no degree",23.5,White,78.51968287584178
+Michigan,"Some college, no degree",23.5,Black,13.812961662620129
+Michigan,"Some college, no degree",23.5,Asian,3.0570260290547173
+Michigan,"Some college, no degree",23.5,Hispanic,5.000226964873068
+Michigan,Associate's degree,9.4,White,78.51968287584178
+Michigan,Associate's degree,9.4,Black,13.812961662620129
+Michigan,Associate's degree,9.4,Asian,3.0570260290547173
+Michigan,Associate's degree,9.4,Hispanic,5.000226964873068
+Michigan,Bachelor's degree,17.4,White,78.51968287584178
+Michigan,Bachelor's degree,17.4,Black,13.812961662620129
+Michigan,Bachelor's degree,17.4,Asian,3.0570260290547173
+Michigan,Bachelor's degree,17.4,Hispanic,5.000226964873068
+Michigan,Grad/pro degree,11.2,White,78.51968287584178
+Michigan,Grad/pro degree,11.2,Black,13.812961662620129
+Michigan,Grad/pro degree,11.2,Asian,3.0570260290547173
+Michigan,Grad/pro degree,11.2,Hispanic,5.000226964873068
+Missouri,Less than 9th Grade,3.3,White,82.23794765964615
+Missouri,Less than 9th Grade,3.3,Black,11.574529126304462
+Missouri,Less than 9th Grade,3.3,Asian,1.9165650530323006
+Missouri,Less than 9th Grade,3.3,Hispanic,4.090352446329774
+Missouri,"9th to 12th grade, no diploma",7.2,White,82.23794765964615
+Missouri,"9th to 12th grade, no diploma",7.2,Black,11.574529126304462
+Missouri,"9th to 12th grade, no diploma",7.2,Asian,1.9165650530323006
+Missouri,"9th to 12th grade, no diploma",7.2,Hispanic,4.090352446329774
+Missouri,High school graduate,30.7,White,82.23794765964615
+Missouri,High school graduate,30.7,Black,11.574529126304462
+Missouri,High school graduate,30.7,Asian,1.9165650530323006
+Missouri,High school graduate,30.7,Hispanic,4.090352446329774
+Missouri,"Some college, no degree",22.4,White,82.23794765964615
+Missouri,"Some college, no degree",22.4,Black,11.574529126304462
+Missouri,"Some college, no degree",22.4,Asian,1.9165650530323006
+Missouri,"Some college, no degree",22.4,Hispanic,4.090352446329774
+Missouri,Associate's degree,7.8,White,82.23794765964615
+Missouri,Associate's degree,7.8,Black,11.574529126304462
+Missouri,Associate's degree,7.8,Asian,1.9165650530323006
+Missouri,Associate's degree,7.8,Hispanic,4.090352446329774
+Missouri,Bachelor's degree,17.7,White,82.23794765964615
+Missouri,Bachelor's degree,17.7,Black,11.574529126304462
+Missouri,Bachelor's degree,17.7,Asian,1.9165650530323006
+Missouri,Bachelor's degree,17.7,Hispanic,4.090352446329774
+Missouri,Grad/pro degree,10.9,White,82.23794765964615
+Missouri,Grad/pro degree,10.9,Black,11.574529126304462
+Missouri,Grad/pro degree,10.9,Asian,1.9165650530323006
+Missouri,Grad/pro degree,10.9,Hispanic,4.090352446329774
+Nebraska,Less than 9th Grade,4,White,87.48939498939498
+Nebraska,Less than 9th Grade,4,Black,4.77015477015477
+Nebraska,Less than 9th Grade,4,Asian,2.3155148155148155
+Nebraska,Less than 9th Grade,4,Hispanic,10.672263172263172
+Nebraska,"9th to 12th grade, no diploma",5,White,87.48939498939498
+Nebraska,"9th to 12th grade, no diploma",5,Black,4.77015477015477
+Nebraska,"9th to 12th grade, no diploma",5,Asian,2.3155148155148155
+Nebraska,"9th to 12th grade, no diploma",5,Hispanic,10.672263172263172
+Nebraska,High school graduate,26.3,White,87.48939498939498
+Nebraska,High school graduate,26.3,Black,4.77015477015477
+Nebraska,High school graduate,26.3,Asian,2.3155148155148155
+Nebraska,High school graduate,26.3,Hispanic,10.672263172263172
+Nebraska,"Some college, no degree",23,White,87.48939498939498
+Nebraska,"Some college, no degree",23,Black,4.77015477015477
+Nebraska,"Some college, no degree",23,Asian,2.3155148155148155
+Nebraska,"Some college, no degree",23,Hispanic,10.672263172263172
+Nebraska,Associate's degree,10.5,White,87.48939498939498
+Nebraska,Associate's degree,10.5,Black,4.77015477015477
+Nebraska,Associate's degree,10.5,Asian,2.3155148155148155
+Nebraska,Associate's degree,10.5,Hispanic,10.672263172263172
+Nebraska,Bachelor's degree,20.8,White,87.48939498939498
+Nebraska,Bachelor's degree,20.8,Black,4.77015477015477
+Nebraska,Bachelor's degree,20.8,Asian,2.3155148155148155
+Nebraska,Bachelor's degree,20.8,Hispanic,10.672263172263172
+Nebraska,Grad/pro degree,10.5,White,87.48939498939498
+Nebraska,Grad/pro degree,10.5,Black,4.77015477015477
+Nebraska,Grad/pro degree,10.5,Asian,2.3155148155148155
+Nebraska,Grad/pro degree,10.5,Hispanic,10.672263172263172
+Nevada,Less than 9th Grade,5.7,White,66.20605443524452
+Nevada,Less than 9th Grade,5.7,Black,8.933851868502272
+Nevada,Less than 9th Grade,5.7,Asian,8.029597149904083
+Nevada,Less than 9th Grade,5.7,Hispanic,28.451589527888714
+Nevada,"9th to 12th grade, no diploma",8,White,66.20605443524452
+Nevada,"9th to 12th grade, no diploma",8,Black,8.933851868502272
+Nevada,"9th to 12th grade, no diploma",8,Asian,8.029597149904083
+Nevada,"9th to 12th grade, no diploma",8,Hispanic,28.451589527888714
+Nevada,High school graduate,28.1,White,66.20605443524452
+Nevada,High school graduate,28.1,Black,8.933851868502272
+Nevada,High school graduate,28.1,Asian,8.029597149904083
+Nevada,High school graduate,28.1,Hispanic,28.451589527888714
+Nevada,"Some college, no degree",25.7,White,66.20605443524452
+Nevada,"Some college, no degree",25.7,Black,8.933851868502272
+Nevada,"Some college, no degree",25.7,Asian,8.029597149904083
+Nevada,"Some college, no degree",25.7,Hispanic,28.451589527888714
+Nevada,Associate's degree,8.2,White,66.20605443524452
+Nevada,Associate's degree,8.2,Black,8.933851868502272
+Nevada,Associate's degree,8.2,Asian,8.029597149904083
+Nevada,Associate's degree,8.2,Hispanic,28.451589527888714
+Nevada,Bachelor's degree,15.9,White,66.20605443524452
+Nevada,Bachelor's degree,15.9,Black,8.933851868502272
+Nevada,Bachelor's degree,15.9,Asian,8.029597149904083
+Nevada,Bachelor's degree,15.9,Hispanic,28.451589527888714
+Nevada,Grad/pro degree,8.4,White,66.20605443524452
+Nevada,Grad/pro degree,8.4,Black,8.933851868502272
+Nevada,Grad/pro degree,8.4,Asian,8.029597149904083
+Nevada,Grad/pro degree,8.4,Hispanic,28.451589527888714
+New Hampshire,Less than 9th Grade,2.2,White,93.03315962376323
+New Hampshire,Less than 9th Grade,2.2,Black,1.5269175407964444
+New Hampshire,Less than 9th Grade,2.2,Asian,2.6885537747967807
+New Hampshire,Less than 9th Grade,2.2,Hispanic,3.598928865410063
+New Hampshire,"9th to 12th grade, no diploma",4.9,White,93.03315962376323
+New Hampshire,"9th to 12th grade, no diploma",4.9,Black,1.5269175407964444
+New Hampshire,"9th to 12th grade, no diploma",4.9,Asian,2.6885537747967807
+New Hampshire,"9th to 12th grade, no diploma",4.9,Hispanic,3.598928865410063
+New Hampshire,High school graduate,27.6,White,93.03315962376323
+New Hampshire,High school graduate,27.6,Black,1.5269175407964444
+New Hampshire,High school graduate,27.6,Asian,2.6885537747967807
+New Hampshire,High school graduate,27.6,Hispanic,3.598928865410063
+New Hampshire,"Some college, no degree",18.7,White,93.03315962376323
+New Hampshire,"Some college, no degree",18.7,Black,1.5269175407964444
+New Hampshire,"Some college, no degree",18.7,Asian,2.6885537747967807
+New Hampshire,"Some college, no degree",18.7,Hispanic,3.598928865410063
+New Hampshire,Associate's degree,10.1,White,93.03315962376323
+New Hampshire,Associate's degree,10.1,Black,1.5269175407964444
+New Hampshire,Associate's degree,10.1,Asian,2.6885537747967807
+New Hampshire,Associate's degree,10.1,Hispanic,3.598928865410063
+New Hampshire,Bachelor's degree,22.4,White,93.03315962376323
+New Hampshire,Bachelor's degree,22.4,Black,1.5269175407964444
+New Hampshire,Bachelor's degree,22.4,Asian,2.6885537747967807
+New Hampshire,Bachelor's degree,22.4,Hispanic,3.598928865410063
+New Hampshire,Grad/pro degree,14.1,White,93.03315962376323
+New Hampshire,Grad/pro degree,14.1,Black,1.5269175407964444
+New Hampshire,Grad/pro degree,14.1,Asian,2.6885537747967807
+New Hampshire,Grad/pro degree,14.1,Hispanic,3.598928865410063
+New York,Less than 9th Grade,6.3,White,63.79172200784639
+New York,Less than 9th Grade,6.3,Black,15.638842675311862
+New York,Less than 9th Grade,6.3,Asian,8.310242402905061
+New York,Less than 9th Grade,6.3,Hispanic,18.888278295949227
+New York,"9th to 12th grade, no diploma",7.2,White,63.79172200784639
+New York,"9th to 12th grade, no diploma",7.2,Black,15.638842675311862
+New York,"9th to 12th grade, no diploma",7.2,Asian,8.310242402905061
+New York,"9th to 12th grade, no diploma",7.2,Hispanic,18.888278295949227
+New York,High school graduate,26.1,White,63.79172200784639
+New York,High school graduate,26.1,Black,15.638842675311862
+New York,High school graduate,26.1,Asian,8.310242402905061
+New York,High school graduate,26.1,Hispanic,18.888278295949227
+New York,"Some college, no degree",15.7,White,63.79172200784639
+New York,"Some college, no degree",15.7,Black,15.638842675311862
+New York,"Some college, no degree",15.7,Asian,8.310242402905061
+New York,"Some college, no degree",15.7,Hispanic,18.888278295949227
+New York,Associate's degree,8.7,White,63.79172200784639
+New York,Associate's degree,8.7,Black,15.638842675311862
+New York,Associate's degree,8.7,Asian,8.310242402905061
+New York,Associate's degree,8.7,Hispanic,18.888278295949227
+New York,Bachelor's degree,20.2,White,63.79172200784639
+New York,Bachelor's degree,20.2,Black,15.638842675311862
+New York,Bachelor's degree,20.2,Asian,8.310242402905061
+New York,Bachelor's degree,20.2,Hispanic,18.888278295949227
+New York,Grad/pro degree,15.7,White,63.79172200784639
+New York,Grad/pro degree,15.7,Black,15.638842675311862
+New York,Grad/pro degree,15.7,Asian,8.310242402905061
+New York,Grad/pro degree,15.7,Hispanic,18.888278295949227
+Ohio,Less than 9th Grade,2.8,White,81.51460773643156
+Ohio,Less than 9th Grade,2.8,Black,12.354285764351271
+Ohio,Less than 9th Grade,2.8,Asian,2.145194946623307
+Ohio,Less than 9th Grade,2.8,Hispanic,3.7049603418829555
+Ohio,"9th to 12th grade, no diploma",7.1,White,81.51460773643156
+Ohio,"9th to 12th grade, no diploma",7.1,Black,12.354285764351271
+Ohio,"9th to 12th grade, no diploma",7.1,Asian,2.145194946623307
+Ohio,"9th to 12th grade, no diploma",7.1,Hispanic,3.7049603418829555
+Ohio,High school graduate,33.3,White,81.51460773643156
+Ohio,High school graduate,33.3,Black,12.354285764351271
+Ohio,High school graduate,33.3,Asian,2.145194946623307
+Ohio,High school graduate,33.3,Hispanic,3.7049603418829555
+Ohio,"Some college, no degree",20.5,White,81.51460773643156
+Ohio,"Some college, no degree",20.5,Black,12.354285764351271
+Ohio,"Some college, no degree",20.5,Asian,2.145194946623307
+Ohio,"Some college, no degree",20.5,Hispanic,3.7049603418829555
+Ohio,Associate's degree,8.6,White,81.51460773643156
+Ohio,Associate's degree,8.6,Black,12.354285764351271
+Ohio,Associate's degree,8.6,Asian,2.145194946623307
+Ohio,Associate's degree,8.6,Hispanic,3.7049603418829555
+Ohio,Bachelor's degree,17.3,White,81.51460773643156
+Ohio,Bachelor's degree,17.3,Black,12.354285764351271
+Ohio,Bachelor's degree,17.3,Asian,2.145194946623307
+Ohio,Bachelor's degree,17.3,Hispanic,3.7049603418829555
+Ohio,Grad/pro degree,10.5,White,81.51460773643156
+Ohio,Grad/pro degree,10.5,Black,12.354285764351271
+Ohio,Grad/pro degree,10.5,Asian,2.145194946623307
+Ohio,Grad/pro degree,10.5,Hispanic,3.7049603418829555
+Oregon,Less than 9th Grade,3.7,White,84.41893970591946
+Oregon,Less than 9th Grade,3.7,Black,1.905685601195313
+Oregon,Less than 9th Grade,3.7,Asian,4.275169937453806
+Oregon,Less than 9th Grade,3.7,Hispanic,12.835946018844457
+Oregon,"9th to 12th grade, no diploma",5.9,White,84.41893970591946
+Oregon,"9th to 12th grade, no diploma",5.9,Black,1.905685601195313
+Oregon,"9th to 12th grade, no diploma",5.9,Asian,4.275169937453806
+Oregon,"9th to 12th grade, no diploma",5.9,Hispanic,12.835946018844457
+Oregon,High school graduate,23,White,84.41893970591946
+Oregon,High school graduate,23,Black,1.905685601195313
+Oregon,High school graduate,23,Asian,4.275169937453806
+Oregon,High school graduate,23,Hispanic,12.835946018844457
+Oregon,"Some college, no degree",25.7,White,84.41893970591946
+Oregon,"Some college, no degree",25.7,Black,1.905685601195313
+Oregon,"Some college, no degree",25.7,Asian,4.275169937453806
+Oregon,"Some college, no degree",25.7,Hispanic,12.835946018844457
+Oregon,Associate's degree,8.8,White,84.41893970591946
+Oregon,Associate's degree,8.8,Black,1.905685601195313
+Oregon,Associate's degree,8.8,Asian,4.275169937453806
+Oregon,Associate's degree,8.8,Hispanic,12.835946018844457
+Oregon,Bachelor's degree,20.5,White,84.41893970591946
+Oregon,Bachelor's degree,20.5,Black,1.905685601195313
+Oregon,Bachelor's degree,20.5,Asian,4.275169937453806
+Oregon,Bachelor's degree,20.5,Hispanic,12.835946018844457
+Oregon,Grad/pro degree,12.4,White,84.41893970591946
+Oregon,Grad/pro degree,12.4,Black,1.905685601195313
+Oregon,Grad/pro degree,12.4,Asian,4.275169937453806
+Oregon,Grad/pro degree,12.4,Hispanic,12.835946018844457
+Rhode Island,Less than 9th Grade,5.2,White,80.87195760786136
+Rhode Island,Less than 9th Grade,5.2,Black,6.554351601488154
+Rhode Island,Less than 9th Grade,5.2,Asian,3.375225130156699
+Rhode Island,Less than 9th Grade,5.2,Hispanic,15.034672173581384
+Rhode Island,"9th to 12th grade, no diploma",6.8,White,80.87195760786136
+Rhode Island,"9th to 12th grade, no diploma",6.8,Black,6.554351601488154
+Rhode Island,"9th to 12th grade, no diploma",6.8,Asian,3.375225130156699
+Rhode Island,"9th to 12th grade, no diploma",6.8,Hispanic,15.034672173581384
+Rhode Island,High school graduate,28.2,White,80.87195760786136
+Rhode Island,High school graduate,28.2,Black,6.554351601488154
+Rhode Island,High school graduate,28.2,Asian,3.375225130156699
+Rhode Island,High school graduate,28.2,Hispanic,15.034672173581384
+Rhode Island,"Some college, no degree",18.2,White,80.87195760786136
+Rhode Island,"Some college, no degree",18.2,Black,6.554351601488154
+Rhode Island,"Some college, no degree",18.2,Asian,3.375225130156699
+Rhode Island,"Some college, no degree",18.2,Hispanic,15.034672173581384
+Rhode Island,Associate's degree,8.3,White,80.87195760786136
+Rhode Island,Associate's degree,8.3,Black,6.554351601488154
+Rhode Island,Associate's degree,8.3,Asian,3.375225130156699
+Rhode Island,Associate's degree,8.3,Hispanic,15.034672173581384
+Rhode Island,Bachelor's degree,19.9,White,80.87195760786136
+Rhode Island,Bachelor's degree,19.9,Black,6.554351601488154
+Rhode Island,Bachelor's degree,19.9,Asian,3.375225130156699
+Rhode Island,Bachelor's degree,19.9,Hispanic,15.034672173581384
+Rhode Island,Grad/pro degree,13.4,White,80.87195760786136
+Rhode Island,Grad/pro degree,13.4,Black,6.554351601488154
+Rhode Island,Grad/pro degree,13.4,Asian,3.375225130156699
+Rhode Island,Grad/pro degree,13.4,Hispanic,15.034672173581384
+South Dakota,Less than 9th Grade,3.2,White,84.46966234673819
+South Dakota,Less than 9th Grade,3.2,Black,1.8791168231922422
+South Dakota,Less than 9th Grade,3.2,Asian,1.4647878198148998
+South Dakota,Less than 9th Grade,3.2,Hispanic,3.701886753157798
+South Dakota,"9th to 12th grade, no diploma",5.1,White,84.46966234673819
+South Dakota,"9th to 12th grade, no diploma",5.1,Black,1.8791168231922422
+South Dakota,"9th to 12th grade, no diploma",5.1,Asian,1.4647878198148998
+South Dakota,"9th to 12th grade, no diploma",5.1,Hispanic,3.701886753157798
+South Dakota,High school graduate,30.6,White,84.46966234673819
+South Dakota,High school graduate,30.6,Black,1.8791168231922422
+South Dakota,High school graduate,30.6,Asian,1.4647878198148998
+South Dakota,High school graduate,30.6,Hispanic,3.701886753157798
+South Dakota,"Some college, no degree",21.2,White,84.46966234673819
+South Dakota,"Some college, no degree",21.2,Black,1.8791168231922422
+South Dakota,"Some college, no degree",21.2,Asian,1.4647878198148998
+South Dakota,"Some college, no degree",21.2,Hispanic,3.701886753157798
+South Dakota,Associate's degree,11.5,White,84.46966234673819
+South Dakota,Associate's degree,11.5,Black,1.8791168231922422
+South Dakota,Associate's degree,11.5,Asian,1.4647878198148998
+South Dakota,Associate's degree,11.5,Hispanic,3.701886753157798
+South Dakota,Bachelor's degree,19.8,White,84.46966234673819
+South Dakota,Bachelor's degree,19.8,Black,1.8791168231922422
+South Dakota,Bachelor's degree,19.8,Asian,1.4647878198148998
+South Dakota,Bachelor's degree,19.8,Hispanic,3.701886753157798
+South Dakota,Grad/pro degree,8.6,White,84.46966234673819
+South Dakota,Grad/pro degree,8.6,Black,1.8791168231922422
+South Dakota,Grad/pro degree,8.6,Asian,1.4647878198148998
+South Dakota,Grad/pro degree,8.6,Hispanic,3.701886753157798
+Texas,Less than 9th Grade,8.5,White,74.30713322965825
+Texas,Less than 9th Grade,8.5,Black,12.070143314400347
+Texas,Less than 9th Grade,8.5,Asian,4.691582755652238
+Texas,Less than 9th Grade,8.5,Hispanic,39.16614533267564
+Texas,"9th to 12th grade, no diploma",8.3,White,74.30713322965825
+Texas,"9th to 12th grade, no diploma",8.3,Black,12.070143314400347
+Texas,"9th to 12th grade, no diploma",8.3,Asian,4.691582755652238
+Texas,"9th to 12th grade, no diploma",8.3,Hispanic,39.16614533267564
+Texas,High school graduate,25,White,74.30713322965825
+Texas,High school graduate,25,Black,12.070143314400347
+Texas,High school graduate,25,Asian,4.691582755652238
+Texas,High school graduate,25,Hispanic,39.16614533267564
+Texas,"Some college, no degree",21.8,White,74.30713322965825
+Texas,"Some college, no degree",21.8,Black,12.070143314400347
+Texas,"Some college, no degree",21.8,Asian,4.691582755652238
+Texas,"Some college, no degree",21.8,Hispanic,39.16614533267564
+Texas,Associate's degree,7.1,White,74.30713322965825
+Texas,Associate's degree,7.1,Black,12.070143314400347
+Texas,Associate's degree,7.1,Asian,4.691582755652238
+Texas,Associate's degree,7.1,Hispanic,39.16614533267564
+Texas,Bachelor's degree,19.1,White,74.30713322965825
+Texas,Bachelor's degree,19.1,Black,12.070143314400347
+Texas,Bachelor's degree,19.1,Asian,4.691582755652238
+Texas,Bachelor's degree,19.1,Hispanic,39.16614533267564
+Texas,Grad/pro degree,10.2,White,74.30713322965825
+Texas,Grad/pro degree,10.2,Black,12.070143314400347
+Texas,Grad/pro degree,10.2,Asian,4.691582755652238
+Texas,Grad/pro degree,10.2,Hispanic,39.16614533267564
+Alaska,Less than 9th Grade,2.6,White,64.83732241413863
+Alaska,Less than 9th Grade,2.6,Black,3.2672277919503436
+Alaska,Less than 9th Grade,2.6,Asian,6.3039934138190645
+Alaska,Less than 9th Grade,2.6,Hispanic,6.930926344182116
+Alaska,"9th to 12th grade, no diploma",4.7,White,64.83732241413863
+Alaska,"9th to 12th grade, no diploma",4.7,Black,3.2672277919503436
+Alaska,"9th to 12th grade, no diploma",4.7,Asian,6.3039934138190645
+Alaska,"9th to 12th grade, no diploma",4.7,Hispanic,6.930926344182116
+Alaska,High school graduate,28,White,64.83732241413863
+Alaska,High school graduate,28,Black,3.2672277919503436
+Alaska,High school graduate,28,Asian,6.3039934138190645
+Alaska,High school graduate,28,Hispanic,6.930926344182116
+Alaska,"Some college, no degree",27.1,White,64.83732241413863
+Alaska,"Some college, no degree",27.1,Black,3.2672277919503436
+Alaska,"Some college, no degree",27.1,Asian,6.3039934138190645
+Alaska,"Some college, no degree",27.1,Hispanic,6.930926344182116
+Alaska,Associate's degree,8.4,White,64.83732241413863
+Alaska,Associate's degree,8.4,Black,3.2672277919503436
+Alaska,Associate's degree,8.4,Asian,6.3039934138190645
+Alaska,Associate's degree,8.4,Hispanic,6.930926344182116
+Alaska,Bachelor's degree,18.4,White,64.83732241413863
+Alaska,Bachelor's degree,18.4,Black,3.2672277919503436
+Alaska,Bachelor's degree,18.4,Asian,6.3039934138190645
+Alaska,Bachelor's degree,18.4,Hispanic,6.930926344182116
+Alaska,Grad/pro degree,10.8,White,64.83732241413863
+Alaska,Grad/pro degree,10.8,Black,3.2672277919503436
+Alaska,Grad/pro degree,10.8,Asian,6.3039934138190645
+Alaska,Grad/pro degree,10.8,Hispanic,6.930926344182116
+Hawaii,Less than 9th Grade,3.8,White,25.007366235147106
+Hawaii,Less than 9th Grade,3.8,Black,1.8470790680077551
+Hawaii,Less than 9th Grade,3.8,Asian,37.7518320653095
+Hawaii,Less than 9th Grade,3.8,Hispanic,10.404991740674769
+Hawaii,"9th to 12th grade, no diploma",4.4,White,25.007366235147106
+Hawaii,"9th to 12th grade, no diploma",4.4,Black,1.8470790680077551
+Hawaii,"9th to 12th grade, no diploma",4.4,Asian,37.7518320653095
+Hawaii,"9th to 12th grade, no diploma",4.4,Hispanic,10.404991740674769
+Hawaii,High school graduate,27.7,White,25.007366235147106
+Hawaii,High school graduate,27.7,Black,1.8470790680077551
+Hawaii,High school graduate,27.7,Asian,37.7518320653095
+Hawaii,High school graduate,27.7,Hispanic,10.404991740674769
+Hawaii,"Some college, no degree",21,White,25.007366235147106
+Hawaii,"Some college, no degree",21,Black,1.8470790680077551
+Hawaii,"Some college, no degree",21,Asian,37.7518320653095
+Hawaii,"Some college, no degree",21,Hispanic,10.404991740674769
+Hawaii,Associate's degree,10.6,White,25.007366235147106
+Hawaii,Associate's degree,10.6,Black,1.8470790680077551
+Hawaii,Associate's degree,10.6,Asian,37.7518320653095
+Hawaii,Associate's degree,10.6,Hispanic,10.404991740674769
+Hawaii,Bachelor's degree,21.5,White,25.007366235147106
+Hawaii,Bachelor's degree,21.5,Black,1.8470790680077551
+Hawaii,Bachelor's degree,21.5,Asian,37.7518320653095
+Hawaii,Bachelor's degree,21.5,Hispanic,10.404991740674769
+Hawaii,Grad/pro degree,11,White,25.007366235147106
+Hawaii,Grad/pro degree,11,Black,1.8470790680077551
+Hawaii,Grad/pro degree,11,Asian,37.7518320653095
+Hawaii,Grad/pro degree,11,Hispanic,10.404991740674769
